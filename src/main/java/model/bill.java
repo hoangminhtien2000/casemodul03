@@ -1,2 +1,4 @@
-package model;public class bill {
+package model;
+
+public class bill {
 }
