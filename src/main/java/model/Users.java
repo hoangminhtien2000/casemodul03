@@ -9,6 +9,7 @@ public class Users {
     private String phoneNumber;
     private String address;
     private int role_id;
+    private int status;
 
     public int getUser_id() {
         return user_id;
@@ -74,10 +75,18 @@ public class Users {
         this.role_id = role_id;
     }
 
+    public int getStatus() {
+        return status;
+    }
+
+    public void setStatus(int status) {
+        this.status = status;
+    }
+
     public Users() {
     }
 
-    public Users(int user_id, String email, String password, String firstName, String lastName, String phoneNumber, String address, int role_id) {
+    public Users(int user_id, String email, String password, String firstName, String lastName, String phoneNumber, String address, int role_id, int status) {
         this.user_id = user_id;
         this.email = email;
         this.password = password;
@@ -86,5 +95,6 @@ public class Users {
         this.phoneNumber = phoneNumber;
         this.address = address;
         this.role_id = role_id;
+        this.status = status;
     }
 }
