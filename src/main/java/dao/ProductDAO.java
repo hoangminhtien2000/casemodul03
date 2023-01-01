@@ -12,6 +12,36 @@ public class ProductDAO {
 
     static Connection connection = ConnectionMySql.getConnection();
 
+
+    public  List<InforProduct> getAll() {
+        List<InforProduct> inforProducts = new LinkedList<>();
+        String sql = "SELECT products.product_id, products.product_name, imgs.url_img, products.price, products.status,sizes.size_name,colors.color_name,types.type_name  \n" +
+                "FROM imgs\n" +
+                "JOIN products USING(product_id) \n" +
+                "JOIN sizes USING(size_id)\n" +
+                "JOIN colors USING(color_id)\n" +
+                "JOIN types USING(type_id)";
+        try {
+            Statement statement = connection.createStatement();
+            ResultSet resultSet = statement.executeQuery(sql);
+            resultSet.next();
+            int product_id=resultSet.getInt("products.product_id");
+            String product_name=resultSet.getString("products.product_name");
+            String url_img= resultSet.getString("imgs.url_img");
+            double price= resultSet.getInt("products.price");
+            int status=resultSet.getInt("products.status");
+            String size_name=resultSet.getString("sizes.size_name");
+            String color_name=resultSet.getString("colors.color_name");
+            String type_name=resultSet.getString("types.type_name");
+            inforProducts.add(new InforProduct(product_id,product_name,url_img,price,status,size_name,color_name,type_name));
+
+        } catch (Exception e) {
+            e.printStackTrace();
+            return null;
+        }
+        return inforProducts;
+    }
+
     public List<Products> getProduct() {
         List<Products> products = new LinkedList<>();
         String sql = "Select * from products";
@@ -85,8 +115,8 @@ public class ProductDAO {
         return types;
     }
 
-    public List<Img> getImg() {
-        List<Img> imgs = new LinkedList<>();
+    public List<Imgs> getImg() {
+        List<Imgs> imgs = new LinkedList<>();
         String sql = "Select * from imgs";
         try {
             Statement statement = connection.createStatement();
@@ -95,7 +125,7 @@ public class ProductDAO {
                 int img_id = resultSet.getInt("img_id");
                 String url_img = resultSet.getString("url_img");
                 int product_id = resultSet.getInt("product_id");
-                imgs.add(new Img(img_id, url_img,product_id));
+                imgs.add(new Imgs(img_id, url_img,product_id));
             }
         } catch (Exception e) {
             throw new RuntimeException(e);

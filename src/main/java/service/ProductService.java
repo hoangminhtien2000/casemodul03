@@ -8,6 +8,10 @@ import java.util.List;
 public class ProductService {
     ProductDAO productDAO = new ProductDAO();
 
+    public List<InforProduct> getAll() {
+        return productDAO.getAll();
+    }
+
     public List<Products> getProduct() {
         return productDAO.getProduct();
     }
@@ -24,7 +28,7 @@ public class ProductService {
         return productDAO.getType();
     }
 
-    public List<Img> getImg()  {
+    public List<Imgs> getImg()  {
         return productDAO.getImg();
     }
 

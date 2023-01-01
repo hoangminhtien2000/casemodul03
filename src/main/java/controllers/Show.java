@@ -16,12 +16,17 @@ public class Show extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+
+//        req.setAttribute("products", productService.getAll());
+
         req.setAttribute("products", productService.getProduct());
         req.setAttribute("sizes", productService.getSizes());
         req.setAttribute("colors", productService.getColor());
         req.setAttribute("types", productService.getType());
         req.setAttribute("imgs", productService.getImg());
+
         RequestDispatcher dispatcher = req.getRequestDispatcher("/product/products.jsp");
         dispatcher.forward(req, resp);
+
     }
 }
