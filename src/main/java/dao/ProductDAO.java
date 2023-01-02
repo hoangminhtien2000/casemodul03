@@ -25,14 +25,14 @@ public class ProductDAO {
             Statement statement = connection.createStatement();
             ResultSet resultSet = statement.executeQuery(sql);
             resultSet.next();
-            int product_id=resultSet.getInt("products.product_id");
-            String product_name=resultSet.getString("products.product_name");
-            String url_img= resultSet.getString("imgs.url_img");
-            double price= resultSet.getInt("products.price");
-            int status=resultSet.getInt("products.status");
-            String size_name=resultSet.getString("sizes.size_name");
-            String color_name=resultSet.getString("colors.color_name");
-            String type_name=resultSet.getString("types.type_name");
+            int product_id=resultSet.getInt("product_id");
+            String product_name=resultSet.getString("product_name");
+            String url_img= resultSet.getString("url_img");
+            double price= resultSet.getInt("price");
+            int status=resultSet.getInt("status");
+            String size_name=resultSet.getString("size_name");
+            String color_name=resultSet.getString("color_name");
+            String type_name=resultSet.getString("type_name");
             inforProducts.add(new InforProduct(product_id,product_name,url_img,price,status,size_name,color_name,type_name));
 
         } catch (Exception e) {

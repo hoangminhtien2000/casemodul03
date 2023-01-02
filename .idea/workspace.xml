@@ -5,82 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a4ab01ce-182a-4038-81a6-3d51d0197d6f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../MVC/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MVC/acountdata.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MVC/productdatabase.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MVC/src/main/java/com/controllers/Login.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MVC/src/main/java/com/controllers/Logout.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MVC/src/main/java/com/dao/ConnectionMySql.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MVC/src/main/java/com/dao/ProductDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MVC/src/main/java/com/dao/UserDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MVC/src/main/java/com/filter/CheckLoginFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MVC/src/main/java/com/models/Account.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MVC/src/main/java/com/service/ProductService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MVC/src/main/java/com/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MVC/src/main/webapp/login/login.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/InforProduct.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo_case3/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo_case3/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo_case3/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo_case3/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo_case3/src/main/java/com/model/BillDetails.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo_case3/src/main/java/com/model/Bills.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo_case3/src/main/java/com/model/Colors.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo_case3/src/main/java/com/model/Comments.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo_case3/src/main/java/com/model/Img.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo_case3/src/main/java/com/model/Products.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo_case3/src/main/java/com/model/Roles.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo_case3/src/main/java/com/model/Sizes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo_case3/src/main/java/com/model/Types.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo_case3/src/main/java/com/model/Users.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo_case3/src/main/java/com/model/Warehouses.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CLUD_Product/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CLUD_Product/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CLUD_Product/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CLUD_Product/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CLUD_Product/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CLUD_Product/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CLUD_Product/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CLUD_Product/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CLUD_Product/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CLUD_Product/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CLUD_Product/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CLUD_Product/src/main/java/Servlet/CreateServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CLUD_Product/src/main/java/Servlet/DeleteProduct.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CLUD_Product/src/main/java/Servlet/HomeServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CLUD_Product/src/main/java/model/Product.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CLUD_Product/src/main/java/service/ProductService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CLUD_Product/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CLUD_Product/src/main/webapp/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CRUD_Product/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CRUD_Product/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CRUD_Product/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CRUD_Product/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CRUD_Product/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../CRUD_Product/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CRUD_Product/src/main/java/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CRUD_Product/src/main/java/LoginServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CSS_Cascading Style Stylesheet/QuanLyBanHangBtap1.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../CSS_Cascading Style Stylesheet/QuanLyBanHangBtap1.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MVC/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../MVC/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MVC/src/main/java/com/controllers/Create.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MVC/src/main/java/com/controllers/Create.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MVC/src/main/java/com/controllers/Delete.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MVC/src/main/java/com/controllers/Delete.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MVC/src/main/java/com/controllers/Edit.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MVC/src/main/java/com/controllers/Edit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MVC/src/main/java/com/controllers/Show.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MVC/src/main/java/com/controllers/Show.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MVC/src/main/java/com/models/ListProduct.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MVC/src/main/java/com/models/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MVC/src/main/java/com/models/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MVC/src/main/webapp/create.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../MVC/src/main/webapp/product/create.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MVC/src/main/webapp/edit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../MVC/src/main/webapp/product/edit.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MVC/src/main/webapp/products.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../MVC/src/main/webapp/product/products.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Product_CRUD/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Product_CRUD/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Product_CRUD/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Product_CRUD/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Product_CRUD/src/main/java/Servlet/CreateServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Product_CRUD/src/main/java/Servlet/DeleteProduct.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Product_CRUD/src/main/java/Servlet/HomeServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Product_CRUD/src/main/java/model/Product.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Product_CRUD/src/main/java/service/ProductService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/8c5d3a02-8853-4799-bb67-d16cdb21f704.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/8c5d3a02-8853-4799-bb67-d16cdb21f704.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controllers/Show.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/Show.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dao/ProductDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/ProductDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Img.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Imgs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/ProductService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/product/products.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/product/products.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -128,7 +56,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/webstorm/WebBackEnd/MVC",
+    "last_opened_file_path": "C:/Users/hoang/Desktop/crud_Product_C0922h1_module3",
     "nodejs_package_manager_path": "npm"
   },
   "keyToStringList": {
@@ -243,6 +171,8 @@
       <option name="presentableId" value="Default" />
       <updated>1672295998038</updated>
       <workItem from="1672295999736" duration="2523000" />
+      <workItem from="1672651608136" duration="3270000" />
+      <workItem from="1672661214163" duration="1689000" />
     </task>
     <servers />
   </component>
