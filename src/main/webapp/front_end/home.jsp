@@ -1,24 +1,18 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: MAI
-  Date: 1/1/2023
-  Time: 10:24 AM
-  To change this template use File | Settings | File Templates.
---%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+  <%@ page contentType="text/html;charset=UTF-8" language="java" %>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="../font/fontawesome-free-6.2.1-web/fontawesome-free-6.2.1-web/css/fontawesome.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="../font/fontawesome-free-6.2.1-web/fontawesome-free-6.2.1-web/scss/_icons.scss">
-  <link rel="stylesheet" href="home.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js" />
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js"/>
+  <link rel="stylesheet" href="../css/home.css">
 
 </head>
 <body>
@@ -27,44 +21,43 @@
     <img src="/image/logook.jpg" width="120" height="80">
   </div>
   <div class="menu">
-    <li><a href="category.html">NỮ</a>
-      <ul class="sub-menu">
-        <li><a href="">Hàng mới về</a></li>
-        <li><a href="">Colection</a></li>
-        <li><a href="">Áo</a>
-          <ul>
-            <li><a href="">Áo sơ mi</a></li>
-            <li><a href="">Áo thun</a></li>
-            <li><a href="">Áo Vest</a></li>
-            <li><a href="">Áo khoác</a></li>
-            <li><a href="">Áo len</a></li>
-          </ul>
-        </li>
-        <li><a href="">Quần</a>
-          <ul>
-            <li><a href="">Quần Jean</a></li>
-            <li><a href="">Quần lửng</a></li>
-            <li><a href="">Quần dài</a></li>
-          </ul>
-        </li>
+    <li><a href="/product">SẢN PHẨM</a>
+<%--      <ul class="sub-menu">--%>
+<%--        <li><a href="">Hàng mới về</a></li>--%>
+<%--        <li><a href="">Colection</a></li>--%>
+<%--        <li><a href="">Áo</a>--%>
+<%--          <ul>--%>
+<%--            <li><a href="">Áo sơ mi</a></li>--%>
+<%--            <li><a href="">Áo thun</a></li>--%>
+<%--            <li><a href="">Áo Vest</a></li>--%>
+<%--            <li><a href="">Áo khoác</a></li>--%>
+<%--            <li><a href="">Áo len</a></li>--%>
+<%--          </ul>--%>
+<%--        </li>--%>
+<%--        <li><a href="">Quần</a>--%>
+<%--          <ul>--%>
+<%--            <li><a href="">Quần Jean</a></li>--%>
+<%--            <li><a href="">Quần lửng</a></li>--%>
+<%--            <li><a href="">Quần dài</a></li>--%>
+<%--          </ul>--%>
+<%--        </li>--%>
 
-      </ul>
-
+<%--      </ul>--%>
 
     </li>
-    <li><a href="">NAM</a></li>
-    <li><a href="">TRẺ EM</a></li>
-    <li><a href="">SALE</a></li>
-    <li><a href="">KHẨU TRANG</a></li>
-    <li><a href="">BST</a></li>
+<%--    <li><a href="">NAM</a></li>--%>
+<%--    <li><a href="">TRẺ EM</a></li>--%>
+    <li><a href="">CHƯƠNG TRÌNH KHUYẾN MẠI</a></li>
+<%--    <li><a href="">KHẨU TRANG</a></li>--%>
+    <li><a href="">BỘ SƯU TẬP</a></li>
     <li><a href="">THÔNG TIN</a></li>
 
 
 
   </div>
   <div class="others">
-    <li><input placeholder="tìm kiếm" type="text"><i class="fa-solid fa-magnifying-glass"></i></li>
-    <li><i class="fa-solid fa-user"></i></li>
+    <li><input placeholder="tìm kiếm" type="text"><a href=""><i class="fa-solid fa-magnifying-glass" ></i></a></li>
+    <li><a href="../front_end/login_register.jsp"><i class="fa-solid fa-user"></i></a></li>
     <li><i class="fa-solid fa-cart-shopping"></i></li>
     <li></li>
 
@@ -119,6 +112,13 @@
 
 </body>
 <script>
+  let products = [];
+  localStorage.clear();
+  if(localStorage.getItem('products') != undefined){
+     products = JSON.parse(localStorage.getItem('products'));
+  }else{
+    localStorage.setItem("products", JSON.stringify(products));
+  }
   const header = document.querySelector("header");
   window.addEventListener("scroll",function (){
     x = window.pageYOffset;

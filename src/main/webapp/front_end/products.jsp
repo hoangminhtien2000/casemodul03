@@ -21,7 +21,7 @@
         <div class="row">
             <header>
                 <div class="top-logo">
-                    <a href="index.html"> <img src="/image/logook.jpg" width="120" height="80" ></a>
+                    <a href="../front_end/home.jsp"> <img src="/image/logook.jpg" width="120" height="80" ></a>
                 </div>
                 <div class="top-menu-items">
                     <li><a href="">NỮ</a>
@@ -88,45 +88,48 @@
         <div class="row">
             <div class="category-left">
                 <ul>
-                    <li class="category-left-li"><a href="#">Nữ</a>
+                    <li class="category-left-li"><a href="#">DANH MỤC</a>
                         <ul>
-                            <li><a href="">Hàng nữ mới về</a></li>
-                            <li><a href="">Đồ đi biển</a></li>
-                            <li><a href="">Quần Jean</a></li>
-                            <li><a href="">Mát mẻ mùa hè</a></li>
+                            <c:forEach items="${listT}" var="o" >
+                                <li><a href="type?type_id=${o.type_id}" >${o.type_name}</a></li>
+                            </c:forEach>
+
                         </ul>
                     </li>
-                    <li class="category-left-li"><a href="#">Nam</a>
-                        <ul>
-                            <li><a href="">Hàng nam mới về</a></li>
-                            <li><a href="">Đồ đi biển</a></li>
-                            <li><a href="">Quần Jean</a></li>
-                            <li><a href="">Mát mẻ mùa hè</a></li>
-                        </ul>
-                    </li>
-                    <li class="category-left-li"><a href="">Trẻ em</a></li>
-                    <li class="category-left-li"><a href="">Bộ sưu tập</a></li>
+<%--                    <li class="category-left-li"><a href="#">Nam</a>--%>
+<%--                        <ul>--%>
+<%--                            <li><a href="">Hàng nam mới về</a></li>--%>
+<%--                            <li><a href="">Đồ đi biển</a></li>--%>
+<%--                            <li><a href="">Quần Jean</a></li>--%>
+<%--                            <li><a href="">Mát mẻ mùa hè</a></li>--%>
+<%--                        </ul>--%>
+<%--                    </li>--%>
+<%--                    <li class="category-left-li"><a href="">Trẻ em</a></li>--%>
+<%--                    <li class="category-left-li"><a href="">Bộ sưu tập</a></li>--%>
                 </ul>
             </div>
-            <div class="category-right row">
-                <div class="category-right-top-item">
-                    <p>HÀNG NỮ MỚI VỀ</p>
+            <div class="category-right ">
+                <div class="category-right-top row">
+                    <div class="category-right-top-item">
+                        <p>HÀNG NỮ MỚI VỀ</p>
+                    </div>
+                    <div class="category-right-top-item">
+                        <button><span>Bộ lọc</span><i class="fa-solid fa-caret-down"></i></button>
+                    </div>
+                    <div class="category-right-top-item">
+                        <select name="" id="">
+                            <option value="">Sắp xếp</option>
+                            <option value="">Giá cao đến thấp</option>
+                            <option value="">Giá thấp đến cao</option>
+                        </select>
+                    </div>
                 </div>
-                <div class="category-right-top-item">
-                    <button><span>Bộ lọc</span><i class="fa-solid fa-caret-down"></i></button>
-                </div>
-                <div class="category-right-top-item">
-                    <select name="" id="">
-                        <option value="">Sắp xếp</option>
-                        <option value="">Giá cao đến thấp</option>
-                        <option value="">Giá thấp đến cao</option>
-                    </select>
-                </div>
+
                 <div class="category-right-content row">
                    <c:forEach items="${listP}" var="o">
                        <div class="category-right-content-item">
-                           <img src="${o.url_img}" alt="">
-                           <h1>${o.product_name}</h1>
+                           <a href=""><img src="${o.url_img}" alt="" ></a>
+                           <a href="detail?pid=${o.product_id}"><h1>${o.product_name}</h1></a>
                            <p>${o.price}<sup>đ</sup></p>
                        </div>
                    </c:forEach>

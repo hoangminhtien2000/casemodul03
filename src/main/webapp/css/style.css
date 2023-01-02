@@ -328,10 +328,11 @@ footer {
     width: calc(25% - 12px);
     text-align: center;
     padding: 12px 0;
+
 }
 
 .category-right-content-item h1 {
-    font-size: 11px;
+    font-size: 15px;
     font-family: var(--main-text-font);
     margin-top: 6px;
     color: #333;
@@ -339,6 +340,7 @@ footer {
 
 .category-right-content-item img {
     width: 100%;
+    height: 250px;
 }
 
 .category-right-content-item p {

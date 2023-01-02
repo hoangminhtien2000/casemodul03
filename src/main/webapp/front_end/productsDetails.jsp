@@ -2,12 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+    <%@ page contentType="text/html;charset=UTF-8" language="java" %>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet"
-          href="/assets/font/fontawesome-free-6.2.1-web/fontawesome-free-6.2.1-web/css/fontawesome.min.css">
+    <link rel="stylesheet" href="../font/fontawesome-free-6.2.1-web/fontawesome-free-6.2.1-web/css/fontawesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="../assets/font/fontawesome-free-6.2.1-web/fontawesome-free-6.2.1-web/scss/_icons.scss">
+    <link rel="stylesheet" href="../font/fontawesome-free-6.2.1-web/fontawesome-free-6.2.1-web/scss/_icons.scss">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js"/>
@@ -87,7 +88,7 @@
         <div class="product-content row">
             <div class="product-content-left row">
                 <div class="product-content-left-big-img">
-                    <img src="/image/sp1.jpg" alt="">
+                    <img id="p_img" src="${detail.product_img}" alt="">
                 </div>
                 <div class="product-content-left-small-img">
                     <img src="/image/sp1.1.jpg" alt="">
@@ -98,14 +99,15 @@
             </div>
             <div class="product-content-right">
                 <div class="product-content-right-product-name">
-                    <h1>Váy lưới đi biển xinh tươi</h1>
+                    <h1 id="p_name">${detail.product_name}</h1>
                     <p>MSP: 001</p>
                 </div>
                 <div class="product-content-right-product-price">
-                    <p>1500.000<sup>đ</sup></p>
+                    <p id="p_price">${detail.price}<sup>đ</sup></p>
                 </div>
                 <div class="product-content-right-product-color">
-                    <p><span style="font-weight: bold">Màu sắc</span>:Trắng tinh khôi<span style="color: red">*</span>
+                    <p><span style="font-weight: bold">Màu sắc</span>${detail.color_name}<span
+                            style="color: red">*</span>
                     </p>
                     <div class="product-content-right-product-color-img">
                         <img src="/image/red.jpg" alt="">
@@ -114,22 +116,25 @@
                 <div class="product-content-right-product-size">
                     <p style="font-weight: bold">Size:</p>
                     <div class="size">
-                        <span>S</span>
-                        <span>M</span>
-                        <span>L</span>
-                        <span>XL</span>
-                        <span>XXL</span>
+                        <span><input type="radio" name="p_size" checked value="1">S</span>
+                        <span><input type="radio" name="p_size" value="2">M</span>
+                        <span><input type="radio" name="p_size" value="3">L</span>
+                        <span><input type="radio" name="p_size" value="4">XL</span>
+                        <span><input type="radio" name="p_size" value="5">XXL</span>
                     </div>
                 </div>
                 <div class="quantity">
                     <p style="font-weight: bold">Số lượng:</p>
-                    <input type="number" min="0" value="1">
+                    <input id="p_quantity" type="number" min="0" value="1">
                 </div>
-                <p style="color: red">Vui lòng chọn size</p>
+                <%--                <p style="color: red">Vui lòng chọn size</p>--%>
                 <div class="product-content-right-product-button">
-                    <button><i class="fa-solid fa-cart-shopping"></i>
-                        <p>Mua hàng</p></button>
-                    <button><p>Tìm tại cửa hàng</p></button>
+                    <%--                    <button ><i class="fa-solid fa-cart-shopping"></i>--%>
+                    <%--                        <p>Mua hàng</p></button>--%>
+                    <a >
+                        <button onclick="addCart()">Mua hàng</button>
+                    </a>
+                    <%--                    <button><p>Tìm tại cửa hàng</p></button>--%>
                 </div>
                 <div class="product-content-right-product-icon">
                     <div class="product-content-right-product-icon-item">
@@ -259,6 +264,38 @@
 
 </body>
 <script>
+    let products = JSON.parse(localStorage.getItem('products'));
+    function addCart() {
+        let p_img = document.getElementById('p_img').src;
+        let p_name = document.getElementById('p_name').innerText;
+        let p_price = document.getElementById('p_price').innerText;
+        let sizes = document.getElementsByName('p_size');
+        let p_size;
+        for (var i = 0; i < sizes.length; i++) {
+            if (sizes[i].checked) {
+                p_size = sizes[i].value;
+            }
+        }
+        let p_quantity = document.getElementById('p_quantity').value;
+        // console.log(p_img, p_name, p_price, p_size, quantity)
+        // addToCart(p_img, p_name, p_price, p_size, quantity);
+        let product = {p_img:p_img, p_name:p_name,p_price:p_price,p_size:p_size, p_quantity:p_quantity}
+        products.push(product);
+        localStorage.setItem("products", JSON.stringify(products));
+        products = JSON.parse(localStorage.getItem('products'));
+        console.log("products "+products);
+        window.location.href = "http://localhost:8080/cart";
+
+    }
+
+
+
+
+
+
+
+
+
     const bigImg = document.querySelector(".product-content-left-big-img img");
     const smallImg = document.querySelectorAll(".product-content-left-small-img img");
     smallImg.forEach(function (imgItem, X) {
@@ -289,5 +326,6 @@
             document.querySelector(".product-content-right-bottom-content-big").classList.toggle("activeB")
         })
     }
+
 </script>
 </html>

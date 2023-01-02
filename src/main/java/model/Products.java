@@ -77,4 +77,17 @@ public class Products {
         this.color_id = color_id;
         this.type_id = type_id;
     }
+
+    @Override
+    public String toString() {
+        return "Products{" +
+                "product_id=" + product_id +
+                ", product_name='" + product_name + '\'' +
+                ", price=" + price +
+                ", status=" + status +
+                ", size_id=" + size_id +
+                ", color_id=" + color_id +
+                ", type_id=" + type_id +
+                '}';
+    }
 }
