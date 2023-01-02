@@ -1,8 +1,8 @@
 <%--
   Created by IntelliJ IDEA.
   User: MAI
-  Date: 1/2/2023
-  Time: 1:53 PM
+  Date: 1/3/2023
+  Time: 12:04 AM
   To change this template use File | Settings | File Templates.
 --%>
 <!DOCTYPE html>
@@ -82,87 +82,94 @@
 
 </section>
 
-<!-----------------------Cart------------------>
-<section class="cart">
+<!-----------------------Payment------------------>
+<section class="payment">
     <div class="container">
-        <div class="cart-top-wrap">
-            <div class="cart-top">
-                <div class="cart-top-cart cart-top-item">
+        <div class="payment-top-wrap">
+            <div class="payment-top">
+                <div class="payment-top-delivery payment-top-item">
                     <i class="fa-solid fa-cart-shopping "></i>
                 </div>
-                <div class="cart-top-address cart-top-item">
+                <div class="payment-top-address payment-top-item">
                     <i class="fa-sharp fa-solid fa-location-dot "></i>
                 </div>
-                <div class="cart-top-payment cart-top-item">
+                <div class="payment-top-payment payment-top-item">
                     <i class="fa-brands fa-amazon-pay "></i>
                 </div>
             </div>
         </div>
     </div>
     <div class="container">
-        <div class="cart-content row">
-            <div class="cart-content-left">
-                <table>
-                    <tr>
-                        <th>Sản phẩm</th>
-                        <th>Tên sản phẩm</th>
-                        <th>Màu</th>
-                        <th>Size</th>
-                        <th>SL</th>
-                        <th>Thành tiền</th>
-                        <th>Xóa</th>
-                    </tr>
-                    <tbody id="displayElement">
-<%--                    <tr id="list_buy">--%>
-<%--                        <td><img src="/image/sp1.2.jpg" alt=""></td>--%>
-<%--                        <td>Áo lưới trắng</td>--%>
-<%--                        <td><img src="/image/red.jpg" alt=""></td>--%>
-<%--                        <td><p>L</p></td>--%>
-<%--                        <td><input type="number" min="0" value="1"></td>--%>
-<%--                        <td><p>499<sup>đ</sup></p></td>--%>
-<%--                        <td>--%>
-<%--                            <span>X</span>--%>
-<%--                        </td>--%>
-<%--                    </tr>--%>
-                    </tbody>
+        <div class="payment-content row">
+            <div class="payment-content-left">
+                <div class="payment-content-left-method-delivery">
+                    <p style="font-weight: bold">Phương thức giáo hàng</p>
+                    <div class="payment-content-left-method-delivery-item">
+                        <input  checked type="radio">
+                        <label>Giao hàng chuyển phát nhanh</label>
+                    </div>
+                </div>
+                <div class="payment-content-left-method-payment">
+                    <p style="font-weight: bold">Phương thức thanh toán</p>
+                    <p>Mọi giao dịch đều được bảo mật</p>
+                    <div class="payment-content-left-method-payment-item">
+                        <input  name="method-payment" type="radio">
+                        <label>Thanh toán bằng thẻ tín dụng</label>
+                    </div>
+                    <div class="payment-content-left-method-payment-item-img">
+                        <img src="/image/visa.png" style="height: 50px;width: 200px" alt="">
+                    </div>
+                    <div class="payment-content-left-method-payment-item">
+                        <input  checked name="method-payment"  type="radio">
+                        <label>Thanh toán bằng thẻ ATM</label>
+                    </div>
+                    <div class="payment-content-left-method-payment-item-img">
+                        <img src="/image/techcombank.png" style="width: 200px;height: 150px" alt="">
+                    </div>
+                    <div class="payment-content-left-method-payment-item">
+                        <input  name="method-payment" type="radio">
+                        <label>Thanh toán Momo</label>
+                    </div>
+                    <div class="payment-content-left-method-payment-item-img">
+                        <img src="/image/momo.png" style="width: 300px;height: 100px;"  alt="">
+                    </div>
+                    <div class="payment-content-left-method-payment-item">
+                        <input name="method-payment" type="radio">
+                        <label>Thanh toán tại nơi giao hàng</label>
+                    </div>
 
-                </table>
-            </div>
-            <div class="cart-content-right">
-                <table>
-                    <tr>
-                        <th colspan="2">TỔNG TIỀN GIỎ HÀNG</th>
-                    </tr>
-                    <tr>
-                        <td>Tổng sản phẩm</td>
-                        <td>2</td>
-                    </tr>
-                    <tr>
-                        <td>Tổng tiền hàng</td>
-                        <td><p>1400.000<sup>đ</sup></p></td>
-                    </tr>
-                    <tr>
-                        <td>Tạm tính</td>
-                        <td><p style="color: black;font-weight: bold">1400.000<sup>đ</sup></p></td>
-                    </tr>
-                </table>
-                <div class="cart-content-right-text">
-                    <p>Miễn phí ship khi đơn hàng lớn hơn 1 Jack</p>
-                    <p style="color: red;font-weight: bold">Mua thêm <span
-                            style="font-size: 18px">1000<sup>đ</sup></span> để được miễn phí ship</p>
-                </div>
-                <div class="cart-content-right-button">
-                    <a href="/product"><button>TIẾP TỤC MUA</button></a>
-                    <a href="/delivery"><button>THANH TOÁN</button></a>
-                </div>
-                <div class="cart-content-right-dangnhap">
-                    <p>Tài khoản của cửa hàng:</p><br>
-                    <p>Hãy<a href="" style="color: red">đăng nhâp</a>tài khoản của bạn để tích điểm</p>
                 </div>
             </div>
+            <div class="payment-content-right">
+                <div class="payment-content-right-button">
+                    <input type="text" placeholder="Mã giảm giá">
+                    <button><i class="fa-solid fa-check"></i></button>
+                </div>
+                <div class="payment-content-right-button">
+                    <input type="text" placeholder="Mã cộng tác viên">
+                    <button><i class="fa-solid fa-check"></i></button>
+                </div>
+                <div class="payment-content-right-mnv">
+                    <select>
+                        <option>Chọn mã nhân viên thân thiết</option>
+                        <option>001</option>
+                        <option>002</option>
+                        <option>003</option>
+                        <option>004</option>
+                    </select>
+                </div>
+                <div class="payment-content-right-payment">
+                    <button>TIẾP TỤC THANH TOÁN</button>
+                </div>
+            </div>
+
         </div>
+
+
     </div>
+
 </section>
+
 
 <!--app-connection-->
 
@@ -193,65 +200,6 @@
     <p>Team 5 Neverdie!</p><br>
     <p>Địa chỉ: Tầng 3, Lô T04, HD Moon, Mỹ Đình, Hà Nội</p>
 </div>
+
 </body>
-<script>
-    document.addEventListener("DOMContentLoaded", function(event) {
-        let products = JSON.parse(localStorage.getItem('products'));
-        // console.log("length: "+products.toString());
-        // debugger;
-        for(let item in products){
-            addToCart(products[item]);
-        }
-
-    });
-    function mapSize(sizeId){
-        if(sizeId ==1){
-            return "S";
-        }
-        if(sizeId ==2){
-            return "M";
-        }
-        if(sizeId ==3){
-            return "L";
-        }
-        if(sizeId ==4){
-            return "XL";
-        }
-        if(sizeId ==5){
-            return "XXl";
-        }
-    }
-
-    function addToCart(product) {
-        let price = parseFloat(product.p_price) * parseFloat(product.p_quantity);
-        let size = mapSize(product.p_size)
-        let addtr = document.createElement("tr");
-        let trcontent = ' <tr id="list_buy"> <td><img src="'+product.p_img+'" alt=""></td> <td>'+product.p_name+'</td> <td><img src="/image/red.jpg" alt=""></td> <td><p>'+size+'</p></td> <td><input type="number" min="0" value="'+product.p_quantity+'"></td> <td><p>'+price+'<sup>đ</sup></p></td> <td> <span>X</span> </td> </tr>'
-        addtr.innerHTML = trcontent;
-        let cartTable = document.querySelector("tbody");
-        cartTable.append(addtr);
-
-        cartTotal();
-
-    }
-
-    function cartTotal(){
-        let cartItem = document.querySelectorAll("tbody tr");
-        // console.log(cartItem.length);
-        // let toTalC = 0;
-        for(let i = 6; i < cartItem.length; i++ ){
-            // let inputValue = cartItem[i].querySelector("input").value;
-            console.log(i);
-
-            // let productPrice = cartItem[i].querySelector("p").innerText;
-            // console.log(productPrice);
-            //  toTalA = inputValue * productPrice;
-            // toTalC += toTalA;
-            // console.log(toTalC);
-
-        }
-    }
-
-
-</script>
 </html>

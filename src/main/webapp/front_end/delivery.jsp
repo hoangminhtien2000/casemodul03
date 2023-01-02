@@ -2,7 +2,7 @@
   Created by IntelliJ IDEA.
   User: MAI
   Date: 1/2/2023
-  Time: 1:53 PM
+  Time: 11:49 PM
   To change this template use File | Settings | File Templates.
 --%>
 <!DOCTYPE html>
@@ -55,7 +55,7 @@
                     </li>
 <%--                    <li><a href="">NAM</a></li>--%>
 <%--                    <li><a href="">TRẺ EM</a></li>--%>
-                    <li><a href="">CHƯƠNG TRÌNH KHUYẾN MẠI</a></li>
+                    <li><a href="">CHƯƠNG TRÌNH KHUẾN MẠI</a></li>
 <%--                    <li><a href="">KHẨU TRANG</a></li>--%>
                     <li><a href="">BST</a></li>
                     <li><a href="">THÔNG TIN</a></li>
@@ -82,86 +82,103 @@
 
 </section>
 
-<!-----------------------Cart------------------>
-<section class="cart">
+<!-----------------------Delivery------------------>
+<section class="delivery">
     <div class="container">
-        <div class="cart-top-wrap">
-            <div class="cart-top">
-                <div class="cart-top-cart cart-top-item">
+        <div class="delivery-top-wrap">
+            <div class="delivery-top">
+                <div class="delivery-top-delivery delivery-top-item">
                     <i class="fa-solid fa-cart-shopping "></i>
                 </div>
-                <div class="cart-top-address cart-top-item">
+                <div class="delivery-top-address delivery-top-item">
                     <i class="fa-sharp fa-solid fa-location-dot "></i>
                 </div>
-                <div class="cart-top-payment cart-top-item">
+                <div class="delivery-top-payment delivery-top-item">
                     <i class="fa-brands fa-amazon-pay "></i>
                 </div>
             </div>
         </div>
     </div>
     <div class="container">
-        <div class="cart-content row">
-            <div class="cart-content-left">
-                <table>
-                    <tr>
-                        <th>Sản phẩm</th>
-                        <th>Tên sản phẩm</th>
-                        <th>Màu</th>
-                        <th>Size</th>
-                        <th>SL</th>
-                        <th>Thành tiền</th>
-                        <th>Xóa</th>
-                    </tr>
-                    <tbody id="displayElement">
-<%--                    <tr id="list_buy">--%>
-<%--                        <td><img src="/image/sp1.2.jpg" alt=""></td>--%>
-<%--                        <td>Áo lưới trắng</td>--%>
-<%--                        <td><img src="/image/red.jpg" alt=""></td>--%>
-<%--                        <td><p>L</p></td>--%>
-<%--                        <td><input type="number" min="0" value="1"></td>--%>
-<%--                        <td><p>499<sup>đ</sup></p></td>--%>
-<%--                        <td>--%>
-<%--                            <span>X</span>--%>
-<%--                        </td>--%>
-<%--                    </tr>--%>
-                    </tbody>
-
-                </table>
+        <div class="delivery-content row">
+            <div class="delivery-content-left">
+                <p>Vui lòng chọn địa chỉ giao hàng</p>
+                <div class="delivery-content-left-dangnhap row">
+                    <i class="fa-solid fa-right-to-bracket"></i>
+                    <p>Đăng nhập nếu bạn có tài khoản của cửa hàng</p>
+                </div>
+                <div class="delivery-content-left-khachle row">
+                    <input checked name="loaikhach" type="radio"">
+                    <p><span>Khách lẻ: </span>nếu bạn không muốn lưu lại thông tin</p>
+                </div>
+                <div class="delivery-content-left-dangky row">
+                    <input name="loaikhach" type="radio">
+                    <p><span>Đăng ký: </span>tạo tài khoản với thông tin bên dưới</p>
+                </div>
+                <div class="delivery-content-left-input-top row">
+                    <div class="delivery-content-left-input-top-item">
+                        <label for="">Họ tên<span style="color: red">*</span></label>
+                        <input type="text">
+                    </div>
+                    <div class="delivery-content-left-input-top-item">
+                        <label for="">Điện thoại<span style="color: red">*</span></label>
+                        <input type="text">
+                    </div>
+                    <div class="delivery-content-left-input-top-item">
+                        <label for="">Tỉnh/TP<span style="color: red">*</span></label>
+                        <input type="text">
+                    </div>
+                    <div class="delivery-content-left-input-top-item">
+                        <label for="">Quận/Huyện<span style="color: red">*</span></label>
+                        <input type="text">
+                    </div>
+                </div>
+                <div class="delivery-content-left-input-bottom">
+                    <label for="">Địa chỉ<span style="color: red">*</span></label>
+                    <input type="text">
+                </div>
+                <div class="delivery-content-left-button row">
+                    <a href="/cart"><span>&#171;</span><p>Quay lại giỏ hàng</p></a>
+                    <a href="/payment"><button><p style="font-weight: bold">THANH TOÁN VÀ GIAO HÀNG</p></button></a>
+                </div>
             </div>
-            <div class="cart-content-right">
+            <div class="delivery-content-right">
                 <table>
                     <tr>
-                        <th colspan="2">TỔNG TIỀN GIỎ HÀNG</th>
+                        <th>Tên sản phẩm</th>
+                        <th>Giảm giá</th>
+                        <th>Số lượng</th>
+                        <th>Thành tiền</th>
                     </tr>
                     <tr>
-                        <td>Tổng sản phẩm</td>
-                        <td>2</td>
-                    </tr>
-                    <tr>
-                        <td>Tổng tiền hàng</td>
+                        <td>Áo lưới xinh tươi</td>
+                        <td>-30%</td>
+                        <td>1</td>
                         <td><p>1400.000<sup>đ</sup></p></td>
                     </tr>
                     <tr>
-                        <td>Tạm tính</td>
-                        <td><p style="color: black;font-weight: bold">1400.000<sup>đ</sup></p></td>
+                        <td>Quần lưới xinh tươi</td>
+                        <td>-10%</td>
+                        <td>2</td>
+                        <td><p>2400.000<sup>đ</sup></p></td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: bold" colspan="3">Tổng</td>
+                        <td style="font-weight: bold"><p>2400.000<sup>đ</sup></p></td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: bold" colspan="3">Thuế VAT</td>
+                        <td style="font-weight: bold"><p>2400.000<sup>đ</sup></p></td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: bold" colspan="3">Tổng tiền hàng</td>
+                        <td style="font-weight: bold"><p>2400.000<sup>đ</sup></p></td>
                     </tr>
                 </table>
-                <div class="cart-content-right-text">
-                    <p>Miễn phí ship khi đơn hàng lớn hơn 1 Jack</p>
-                    <p style="color: red;font-weight: bold">Mua thêm <span
-                            style="font-size: 18px">1000<sup>đ</sup></span> để được miễn phí ship</p>
-                </div>
-                <div class="cart-content-right-button">
-                    <a href="/product"><button>TIẾP TỤC MUA</button></a>
-                    <a href="/delivery"><button>THANH TOÁN</button></a>
-                </div>
-                <div class="cart-content-right-dangnhap">
-                    <p>Tài khoản của cửa hàng:</p><br>
-                    <p>Hãy<a href="" style="color: red">đăng nhâp</a>tài khoản của bạn để tích điểm</p>
-                </div>
             </div>
         </div>
     </div>
+
 </section>
 
 <!--app-connection-->
@@ -194,64 +211,4 @@
     <p>Địa chỉ: Tầng 3, Lô T04, HD Moon, Mỹ Đình, Hà Nội</p>
 </div>
 </body>
-<script>
-    document.addEventListener("DOMContentLoaded", function(event) {
-        let products = JSON.parse(localStorage.getItem('products'));
-        // console.log("length: "+products.toString());
-        // debugger;
-        for(let item in products){
-            addToCart(products[item]);
-        }
-
-    });
-    function mapSize(sizeId){
-        if(sizeId ==1){
-            return "S";
-        }
-        if(sizeId ==2){
-            return "M";
-        }
-        if(sizeId ==3){
-            return "L";
-        }
-        if(sizeId ==4){
-            return "XL";
-        }
-        if(sizeId ==5){
-            return "XXl";
-        }
-    }
-
-    function addToCart(product) {
-        let price = parseFloat(product.p_price) * parseFloat(product.p_quantity);
-        let size = mapSize(product.p_size)
-        let addtr = document.createElement("tr");
-        let trcontent = ' <tr id="list_buy"> <td><img src="'+product.p_img+'" alt=""></td> <td>'+product.p_name+'</td> <td><img src="/image/red.jpg" alt=""></td> <td><p>'+size+'</p></td> <td><input type="number" min="0" value="'+product.p_quantity+'"></td> <td><p>'+price+'<sup>đ</sup></p></td> <td> <span>X</span> </td> </tr>'
-        addtr.innerHTML = trcontent;
-        let cartTable = document.querySelector("tbody");
-        cartTable.append(addtr);
-
-        cartTotal();
-
-    }
-
-    function cartTotal(){
-        let cartItem = document.querySelectorAll("tbody tr");
-        // console.log(cartItem.length);
-        // let toTalC = 0;
-        for(let i = 6; i < cartItem.length; i++ ){
-            // let inputValue = cartItem[i].querySelector("input").value;
-            console.log(i);
-
-            // let productPrice = cartItem[i].querySelector("p").innerText;
-            // console.log(productPrice);
-            //  toTalA = inputValue * productPrice;
-            // toTalC += toTalA;
-            // console.log(toTalC);
-
-        }
-    }
-
-
-</script>
 </html>

@@ -5,22 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a4ab01ce-182a-4038-81a6-3d51d0197d6f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/CartServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/HomeServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/front_end/cart.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/front_end/login_register.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/DeliveryServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/PaymentServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/front_end/delivery.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/front_end/payment.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/ProductDetailServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/ProductDetailServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/ProductsServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/ProductsServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/TypeServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/TypeServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dao/ConnectionMySQL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/ConnectionMySQL.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dao/DAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/DAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Category.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/ProductDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/ProductDetail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Products.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Products.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/front_end/cart.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/front_end/cart.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/front_end/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/front_end/home.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/front_end/products.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/front_end/products.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/front_end/productsDetails.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/front_end/productsDetails.jsp" afterDir="false" />
@@ -197,7 +187,7 @@
       <workItem from="1672511192387" duration="372000" />
       <workItem from="1672511598794" duration="41870000" />
       <workItem from="1672594984141" duration="1017000" />
-      <workItem from="1672621346409" duration="23106000" />
+      <workItem from="1672621346409" duration="36605000" />
     </task>
     <servers />
   </component>

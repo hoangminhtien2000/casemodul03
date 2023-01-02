@@ -65,10 +65,10 @@
 </header>
 <section id="Slider">
   <div class="aspect-radio">
-    <img src="/image/slide1.jpg">
-    <img src="/image/slide2.jpg">
-    <img src="/image/slide3.jpg">
-    <img src="/image/slide4.jpg">
+    <img src="/image/sl1.jpg">
+    <img src="/image/sl17.jpg">
+    <img src="/image/sl18.jpg">
+    <img src="/image/sl16.jpg">
 
   </div>
   <div class="dot-container">
