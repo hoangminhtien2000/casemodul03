@@ -23,7 +23,7 @@
 
 <div class="container mt-3">
     <div class="row">
-        <h2 class="col-9">Xin chào ${account.username}</h2>
+        <h2 class="col-9">Xin chào ${toan.username}</h2>
         <c:if test="${sessionScope.account != null}">
             <a href="/logout" class="btn btn-danger col-3">Logout</a>
         </c:if>
