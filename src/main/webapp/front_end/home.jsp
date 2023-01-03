@@ -57,7 +57,7 @@
   </div>
   <div class="others">
     <li><input placeholder="tìm kiếm" type="text"><a href=""><i class="fa-solid fa-magnifying-glass" ></i></a></li>
-    <li><a href="../front_end/login_register.jsp"><i class="fa-solid fa-user"></i></a></li>
+    <li><a href="#"><i class="fa-solid fa-user"></i></a></li>
     <li><i class="fa-solid fa-cart-shopping"></i></li>
     <li></li>
 
