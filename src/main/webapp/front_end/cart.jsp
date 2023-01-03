@@ -291,6 +291,7 @@
         }
     }
 
+
     function inputChange(){
         let cartItem = document.querySelectorAll(".list_buy");
         for (let i = 0; i < cartItem.length; i++) {
