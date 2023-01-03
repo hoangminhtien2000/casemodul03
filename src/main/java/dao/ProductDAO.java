@@ -3,6 +3,7 @@ package dao;
 import model.*;
 
 import java.sql.Connection;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.Statement;
 import java.util.LinkedList;
@@ -66,77 +67,52 @@ public class ProductDAO {
         return products;
     }
 
-    public List<Sizes> getSize() {
-        List<Sizes> sizes = new LinkedList<>();
-        String sql = "Select * from sizes";
+    public boolean saveImg(Imgs imgs) {
+        String sql = "insert into imgs (url_img,product_id) value (?,?)";
         try {
-            Statement statement = connection.createStatement();
-            ResultSet resultSet = statement.executeQuery(sql);
-            while (resultSet.next()) {
-                int size_id = resultSet.getInt("size_id");
-                String size_name = resultSet.getString("size_name");
-                sizes.add(new Sizes(size_id, size_name));
-            }
+            PreparedStatement preparedStatement = connection.prepareStatement(sql);
+            preparedStatement.setString(1, imgs.getUrl_img());
+            preparedStatement.setInt(2, imgs.getProduct_id());
+            return preparedStatement.execute();
         } catch (Exception e) {
-            throw new RuntimeException(e);
+            e.printStackTrace();
+            return false;
         }
-        return sizes;
     }
 
-    public List<Colors> getColor() {
-        List<Colors> colors = new LinkedList<>();
-        String sql = "Select * from colors";
+    public boolean saveWarehouse(Warehouses warehouses) {
+        String sql = "insert into warehouses(product_id,quantity) value (?,?)";
         try {
-            Statement statement = connection.createStatement();
-            ResultSet resultSet = statement.executeQuery(sql);
-            while (resultSet.next()) {
-                int color_id = resultSet.getInt("color_id");
-                String color_name = resultSet.getString("color_name");
-                colors.add(new Colors(color_id, color_name));
-            }
+            PreparedStatement preparedStatement = connection.prepareStatement(sql);
+            preparedStatement.setInt(1, warehouses.getProduct_id());
+            preparedStatement.setInt(2, warehouses.getQuantity());
+            return preparedStatement.execute();
         } catch (Exception e) {
-            throw new RuntimeException(e);
+            e.printStackTrace();
+            return false;
         }
-        return colors;
     }
 
-    public List<Types> getType() {
-        List<Types> types = new LinkedList<>();
-        String sql = "Select * from types";
+    public boolean saveProduct(Products product) {
+        String sql = "insert into products(product_name,price,size_id,color_id,type_id) value (?,?,?,?,?)";
         try {
-            Statement statement = connection.createStatement();
-            ResultSet resultSet = statement.executeQuery(sql);
-            while (resultSet.next()) {
-                int type_id = resultSet.getInt("type_id");
-                String type_name = resultSet.getString("type_name");
-                types.add(new Types(type_id, type_name));
-            }
+            PreparedStatement preparedStatement = connection.prepareStatement(sql);
+            preparedStatement.setString(1, product.getProduct_name());
+            preparedStatement.setDouble(2, product.getPrice());
+            preparedStatement.setInt(3, product.getSize_id());
+            preparedStatement.setInt(4, product.getColor_id());
+            preparedStatement.setInt(5, product.getType_id());
+            return preparedStatement.execute();
         } catch (Exception e) {
-            throw new RuntimeException(e);
+            e.printStackTrace();
+            return false;
         }
-        return types;
     }
 
-    public List<Imgs> getImg() {
-        List<Imgs> imgs = new LinkedList<>();
-        String sql = "Select * from imgs";
-        try {
-            Statement statement = connection.createStatement();
-            ResultSet resultSet = statement.executeQuery(sql);
-            while (resultSet.next()) {
-                int img_id = resultSet.getInt("img_id");
-                String url_img = resultSet.getString("url_img");
-                int product_id = resultSet.getInt("product_id");
-                imgs.add(new Imgs(img_id, url_img, product_id));
-            }
-        } catch (Exception e) {
-            throw new RuntimeException(e);
-        }
-        return imgs;
-    }
 
     public Imgs findByIdImg(String url_img, int product_id) {
-        String sql = "select * from imgs where url_img = and product_id =" + url_img + product_id;
+        String sql = "select * from imgs where url_img ='"+url_img+"' and product_id ="  +product_id;
+
         try {
             Statement statement = connection.createStatement();
             ResultSet resultSet = statement.executeQuery(sql);
@@ -150,7 +126,7 @@ public class ProductDAO {
     }
 
     public Warehouses findByIdWarehouse(int quantity, int product_id) {
-        String sql = "select * from warehouses where quantity = and product_id =" + quantity + product_id;
+        String sql = "select * from warehouses where quantity = " + quantity + " and product_id = " + product_id;
         try {
             Statement statement = connection.createStatement();
             ResultSet resultSet = statement.executeQuery(sql);

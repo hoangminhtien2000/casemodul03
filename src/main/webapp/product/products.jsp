@@ -30,7 +30,7 @@
     </div>
 
     <h2>Danh sách sản phẩm</h2>
-    <a href="" class="btn btn-success">Create</a>
+    <a href="/product/createProduct.jsp" class="btn btn-success">Create</a>
     <table class="table">
         <thead>
         <tr>

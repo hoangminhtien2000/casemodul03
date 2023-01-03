@@ -44,7 +44,7 @@ create table products(
 product_id int AUTO_INCREMENT PRIMARY key,
 product_name varchar(255),
 price DOUBLE,
-status INT,
+status INT DEFAULT 1,
 size_id INT,
 color_id INT,
 type_id int,
@@ -98,7 +98,6 @@ INSERT INTO bills(user_id,date) VALUE("3","2022/12/29");
 INSERT INTO bills(user_id,date) VALUE("4","2022/12/30");
 INSERT INTO bills(user_id,date) VALUE("5","2022/12/31");
 
-INSERT INTO sizes(size_name) VALUE("XS");
 INSERT INTO sizes(size_name) VALUE("S");
 INSERT INTO sizes(size_name) VALUE("M");
 INSERT INTO sizes(size_name) VALUE("L");

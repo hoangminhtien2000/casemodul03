@@ -37,4 +37,9 @@ public class Warehouses {
         this.product_id = product_id;
         this.quantity = quantity;
     }
+
+    public Warehouses(int product_id, int quantity) {
+        this.product_id = product_id;
+        this.quantity = quantity;
+    }
 }

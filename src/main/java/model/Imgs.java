@@ -37,4 +37,9 @@ public class Imgs {
         this.url_img = url_img;
         this.product_id = product_id;
     }
+
+    public Imgs(String url_img, int product_id) {
+        this.url_img = url_img;
+        this.product_id = product_id;
+    }
 }

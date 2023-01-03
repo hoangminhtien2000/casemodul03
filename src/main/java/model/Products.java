@@ -77,4 +77,21 @@ public class Products {
         this.color_id = color_id;
         this.type_id = type_id;
     }
+
+    public Products(int product_id, String product_name, double price, int size_id, int color_id, int type_id) {
+        this.product_id = product_id;
+        this.product_name = product_name;
+        this.price = price;
+        this.size_id = size_id;
+        this.color_id = color_id;
+        this.type_id = type_id;
+    }
+
+    public Products(String product_name, double price, int size_id, int color_id, int type_id) {
+        this.product_name = product_name;
+        this.price = price;
+        this.size_id = size_id;
+        this.color_id = color_id;
+        this.type_id = type_id;
+    }
 }
