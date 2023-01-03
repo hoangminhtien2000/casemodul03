@@ -13,28 +13,29 @@ public class ProductDAO {
     static Connection connection = ConnectionMySql.getConnection();
 
 
-    public  List<InforProduct> getAll() {
+    public List<InforProduct> getAll() {
         List<InforProduct> inforProducts = new LinkedList<>();
         String sql = "SELECT products.product_id, products.product_name, imgs.url_img, products.price, products.status,sizes.size_name,colors.color_name,types.type_name  \n" +
                 "FROM imgs\n" +
                 "JOIN products USING(product_id) \n" +
                 "JOIN sizes USING(size_id)\n" +
                 "JOIN colors USING(color_id)\n" +
-                "JOIN types USING(type_id)";
+                "JOIN types USING(type_id)\n"+
+                " ORDER BY product_id";
         try {
             Statement statement = connection.createStatement();
             ResultSet resultSet = statement.executeQuery(sql);
-            resultSet.next();
-            int product_id=resultSet.getInt("product_id");
-            String product_name=resultSet.getString("product_name");
-            String url_img= resultSet.getString("url_img");
-            double price= resultSet.getInt("price");
-            int status=resultSet.getInt("status");
-            String size_name=resultSet.getString("size_name");
-            String color_name=resultSet.getString("color_name");
-            String type_name=resultSet.getString("type_name");
-            inforProducts.add(new InforProduct(product_id,product_name,url_img,price,status,size_name,color_name,type_name));
-
+            while (resultSet.next()) {
+                int product_id = resultSet.getInt("product_id");
+                String product_name = resultSet.getString("product_name");
+                String url_img = resultSet.getString("url_img");
+                double price = resultSet.getInt("price");
+                int status = resultSet.getInt("status");
+                String size_name = resultSet.getString("size_name");
+                String color_name = resultSet.getString("color_name");
+                String type_name = resultSet.getString("type_name");
+                inforProducts.add(new InforProduct(product_id, product_name, url_img, price, status, size_name, color_name, type_name));
+            }
         } catch (Exception e) {
             e.printStackTrace();
             return null;
@@ -125,14 +126,13 @@ public class ProductDAO {
                 int img_id = resultSet.getInt("img_id");
                 String url_img = resultSet.getString("url_img");
                 int product_id = resultSet.getInt("product_id");
-                imgs.add(new Imgs(img_id, url_img,product_id));
+                imgs.add(new Imgs(img_id, url_img, product_id));
             }
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
         return imgs;
     }
-
 
 
 }
