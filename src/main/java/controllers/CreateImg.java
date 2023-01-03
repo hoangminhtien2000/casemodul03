@@ -15,13 +15,6 @@ import java.io.IOException;
 public class CreateImg extends HttpServlet {
     ProductService productService = new ProductService();
 
-//        @Override
-//    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-//        req.setAttribute("ci", "newProduct");
-//        RequestDispatcher requestDispatcher=req.getRequestDispatcher("/product/createImg.jsp" );
-//        requestDispatcher.forward(req,resp);
-//    }
-
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         int product_id = Integer.parseInt(req.getParameter("product_id"));

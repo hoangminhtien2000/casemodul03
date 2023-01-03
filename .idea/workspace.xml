@@ -5,18 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a4ab01ce-182a-4038-81a6-3d51d0197d6f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/controllers/CreateImg.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controllers/CreateProduct.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controllers/CreateWarehouse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product/createImg.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product/createProduct.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product/createWarehouse.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controllers/EditProduct.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/product/editProduct.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database.sql" beforeDir="false" afterPath="$PROJECT_DIR$/database.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/CreateImg.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/CreateImg.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/CreateWarehouse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/CreateWarehouse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/Show.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/Show.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dao/ProductDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/ProductDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Imgs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Imgs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Products.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Products.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Warehouses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Warehouses.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/ProductService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/product/products.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/product/products.jsp" afterDir="false" />
     </list>
@@ -187,7 +183,8 @@
       <workItem from="1672651608136" duration="3270000" />
       <workItem from="1672661214163" duration="3704000" />
       <workItem from="1672669154842" duration="77000" />
-      <workItem from="1672707556867" duration="30199000" />
+      <workItem from="1672707556867" duration="30375000" />
+      <workItem from="1672744357820" duration="4655000" />
     </task>
     <servers />
   </component>
@@ -207,16 +204,5 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/controllers/CreateProduct.java</url>
-          <line>29</line>
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

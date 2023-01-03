@@ -39,7 +39,6 @@
             <th>IMG</th>
             <th>PRICE</th>
             <th>QUANTITY</th>
-<%--            <th>STATUS</th>--%>
             <th>SIZE</th>
             <th>COLOR</th>
             <th>TYPE</th>
@@ -54,62 +53,15 @@
                 <td>${p.product_name}</td>
                 <td><img src="${p.url_img}" width="100px" height="100px"></td>
                 <td>${p.price}</td>
-<%--                <td>${p.status}</td>--%>
                 <td>${p.quantity}</td>
                 <td>${p.size_name}</td>
                 <td>${p.color_name}</td>
                 <td>${p.type_name}</td>
-                <td><a href="" type="button" class="btn btn-warning">Edit</a></td>
+                <td><a href="editProduct?product_id=${p.product_id}" type="button" class="btn btn-warning">Edit</a></td>
                 <td><a href="deletes?product_id=${p.product_id}&&url_img=${p.url_img}&&quantity=${p.quantity}" type="button" class="btn btn-danger">Delete</a></td>
-<%--                <td><a href="deletes?product_id=${p.product_id}&&url_img=${p.url_img}" type="button" class="btn btn-danger">Delete</a></td>--%>
             </tr>
         </c:forEach>
         </tbody>
-
-        <%--        <tbody>--%>
-        <%--        <c:forEach var="p" items="${products}">--%>
-        <%--            <tr>--%>
-        <%--            <td>${p.product_id}</td>--%>
-        <%--            <td>${p.product_name}</td>--%>
-
-        <%--&lt;%&ndash;            <c:forEach var="i" items="${imgs}">&ndash;%&gt;--%>
-        <%--&lt;%&ndash;                <c:if test="${i.product_id==product_id}">&ndash;%&gt;--%>
-        <%--&lt;%&ndash;                    <td><img src="${i.url_img}" width="100px" height="100px"></td>&ndash;%&gt;--%>
-        <%--&lt;%&ndash;                </c:if>&ndash;%&gt;--%>
-
-        <%--                <td>${p.price}</td>--%>
-        <%--                <c:if test="${p.status==1}">--%>
-        <%--                    <td style="color: green">Còn hàng</td>--%>
-        <%--                </c:if>--%>
-        <%--                <c:if test="${p.status==0}">--%>
-        <%--                    <td style="color: red">Hết hàng</td>--%>
-        <%--                </c:if>--%>
-
-        <%--&lt;%&ndash;                <c:forEach var="s" items="${sizes}">&ndash;%&gt;--%>
-        <%--&lt;%&ndash;                    <c:if test="${s.size_id==p.size_id}">&ndash;%&gt;--%>
-        <%--&lt;%&ndash;                        <td><${s.size_name}</td>&ndash;%&gt;--%>
-        <%--&lt;%&ndash;                    </c:if>&ndash;%&gt;--%>
-
-        <%--&lt;%&ndash;                    <c:forEach var="co" items="${colors}">&ndash;%&gt;--%>
-        <%--&lt;%&ndash;                        <c:if test="${co.color_id==p.color_id}">&ndash;%&gt;--%>
-        <%--&lt;%&ndash;                            <td><${co.color_name}</td>&ndash;%&gt;--%>
-        <%--&lt;%&ndash;                        </c:if>&ndash;%&gt;--%>
-
-        <%--&lt;%&ndash;                        <c:forEach var="t" items="${types}">&ndash;%&gt;--%>
-        <%--&lt;%&ndash;                            <c:if test="${t.type_id==p.type_id}">&ndash;%&gt;--%>
-        <%--&lt;%&ndash;                                <td><${t.type_name}</td>&ndash;%&gt;--%>
-        <%--&lt;%&ndash;                            </c:if>&ndash;%&gt;--%>
-
-        <%--&lt;%&ndash;                            <td><a href="edits?id=${p.id}" type="button" class="btn btn-warning">Edit</a></td>&ndash;%&gt;--%>
-        <%--&lt;%&ndash;                            <td><a href="deletes?id=${p.id}" type="button" class="btn btn-danger">Delete</a></td>&ndash;%&gt;--%>
-        <%--                            </tr>--%>
-        <%--&lt;%&ndash;                        </c:forEach>&ndash;%&gt;--%>
-        <%--&lt;%&ndash;                    </c:forEach>&ndash;%&gt;--%>
-        <%--&lt;%&ndash;                </c:forEach>&ndash;%&gt;--%>
-        <%--&lt;%&ndash;            </c:forEach>&ndash;%&gt;--%>
-        <%--        </c:forEach>--%>
-        <%--        </tbody>--%>
-
     </table>
 </div>
 

@@ -13,12 +13,6 @@ import java.io.IOException;
 @WebServlet(urlPatterns = "/createWarehouse")
 public class CreateWarehouse extends HttpServlet {
     ProductService productService = new ProductService();
-//    @Override
-//    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-//        req.setAttribute("ci", productService.getProduct());
-//        RequestDispatcher requestDispatcher=req.getRequestDispatcher("/product/createImg.jsp" );
-//        requestDispatcher.forward(req,resp);
-//    }
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {

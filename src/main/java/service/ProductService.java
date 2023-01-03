@@ -28,22 +28,6 @@ public class ProductService {
         return productDAO.getProduct();
     }
 
-//    public List<Sizes> getSizes() {
-//        return productDAO.getSize();
-//    }
-//
-//    public List<Colors> getColor() {
-//        return productDAO.getColor();
-//    }
-//
-//    public List<Types> getType() {
-//        return productDAO.getType();
-//    }
-//
-//    public List<Imgs> getImg() {
-//        return productDAO.getImg();
-//    }
-
     public Imgs findByIdImg(String url_img, int product_id) {
         return productDAO.findByIdImg(url_img, product_id);
     }
@@ -66,6 +50,14 @@ public class ProductService {
 
     public void deleteProduct(int product_id) {
         productDAO.deleteProduct(product_id);
+    }
+
+    public void editProduct(Products product){
+        productDAO.editProduct(product);
+    }
+
+    public void editWarehouse(Warehouses warehouses){
+        productDAO.editWarehouse(warehouses);
     }
 
 }

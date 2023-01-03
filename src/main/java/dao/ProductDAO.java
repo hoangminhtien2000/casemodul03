@@ -36,7 +36,7 @@ public class ProductDAO {
                 String size_name = resultSet.getString("size_name");
                 String color_name = resultSet.getString("color_name");
                 String type_name = resultSet.getString("type_name");
-                inforProducts.add(new InforProduct(product_id, product_name, url_img, price,quantity, status, size_name, color_name, type_name));
+                inforProducts.add(new InforProduct(product_id, product_name, url_img, price, quantity, status, size_name, color_name, type_name));
             }
         } catch (Exception e) {
             e.printStackTrace();
@@ -111,7 +111,7 @@ public class ProductDAO {
 
 
     public Imgs findByIdImg(String url_img, int product_id) {
-        String sql = "select * from imgs where url_img ='"+url_img+"' and product_id ="  +product_id;
+        String sql = "select * from imgs where url_img ='" + url_img + "' and product_id =" + product_id;
 
         try {
             Statement statement = connection.createStatement();
@@ -131,7 +131,7 @@ public class ProductDAO {
             Statement statement = connection.createStatement();
             ResultSet resultSet = statement.executeQuery(sql);
             resultSet.next();
-            int warehouse_id= resultSet.getInt("warehouse_id");
+            int warehouse_id = resultSet.getInt("warehouse_id");
             return new Warehouses(warehouse_id, product_id, quantity);
         } catch (Exception e) {
             e.printStackTrace();
@@ -159,7 +159,7 @@ public class ProductDAO {
     }
 
     public void deleteImg(String url_img, int product_id) {
-        String sql = "delete from imgs where url_img ='"+url_img+"' and product_id ="  +product_id;
+        String sql = "delete from imgs where url_img ='" + url_img + "' and product_id =" + product_id;
         try {
             Statement statement = connection.createStatement();
             statement.execute(sql);
@@ -185,6 +185,37 @@ public class ProductDAO {
             statement.execute(sql);
         } catch (Exception e) {
             e.printStackTrace();
+        }
+    }
+
+    public boolean editProduct(Products product) {
+        String sql = "update products set product_name=?, price=?,size_id=?,color_id=?,type_id=?  where product_id=?";
+        try {
+            PreparedStatement preparedStatement = connection.prepareStatement(sql);
+            preparedStatement.setInt(6, product.getProduct_id());
+            preparedStatement.setString(1, product.getProduct_name());
+            preparedStatement.setDouble(2, product.getPrice());
+            preparedStatement.setInt(3, product.getSize_id());
+            preparedStatement.setInt(4, product.getColor_id());
+            preparedStatement.setInt(5, product.getType_id());
+            return preparedStatement.execute();
+        } catch (Exception e) {
+            e.printStackTrace();
+            return false;
+        }
+    }
+
+    public boolean editWarehouse(Warehouses warehouses) {
+        String sql = "UPDATE warehouses SET quantity=?,product_id=? WHERE warehouse_id=?;";
+        try {
+            PreparedStatement preparedStatement = connection.prepareStatement(sql);
+            preparedStatement.setInt(3, warehouses.getProduct_id());
+            preparedStatement.setInt(1, warehouses.getQuantity());
+            preparedStatement.setInt(2, warehouses.getWarehouses_id());
+            return preparedStatement.execute();
+        } catch (Exception e) {
+            e.printStackTrace();
+            return false;
         }
     }
 

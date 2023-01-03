@@ -185,6 +185,9 @@ SELECT * FROM warehouses;
 -- select * from warehouses where warehouse_id =1 and product_id = 1;
 -- select * from products where product_id =1;
 
+-- insert into imgs(url_img,product_id) value ('https://cdn.tgdd.vn/Products/Images/42/238046/xiaomi-redmi-k40-game-enhanced-edition-600x600.jpg',2);
+-- insert into warehouses(product_id,quantity) value (15,3);
+
  -- delete from imgs where url_img ='https://www.victoriassecret.com/p/760x1013/tif/0e/f0/0ef0f5781d9f43b1952bf9889afcf22a/112061464SHM_OM_F.jpg' and product_id =1;
 --  delete from warehouses where quantity =5 and product_id =1;
 --  delete from products where product_id =1;
