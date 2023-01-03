@@ -142,40 +142,40 @@
                     <a href="/payment"><button><p style="font-weight: bold">THANH TOÁN VÀ GIAO HÀNG</p></button></a>
                 </div>
             </div>
-            <div class="delivery-content-right">
-                <table>
-                    <tr>
-                        <th>Tên sản phẩm</th>
-                        <th>Giảm giá</th>
-                        <th>Số lượng</th>
-                        <th>Thành tiền</th>
-                    </tr>
-                    <tr>
-                        <td>Áo lưới xinh tươi</td>
-                        <td>-30%</td>
-                        <td>1</td>
-                        <td><p>1400.000<sup>đ</sup></p></td>
-                    </tr>
-                    <tr>
-                        <td>Quần lưới xinh tươi</td>
-                        <td>-10%</td>
-                        <td>2</td>
-                        <td><p>2400.000<sup>đ</sup></p></td>
-                    </tr>
-                    <tr>
-                        <td style="font-weight: bold" colspan="3">Tổng</td>
-                        <td style="font-weight: bold"><p>2400.000<sup>đ</sup></p></td>
-                    </tr>
-                    <tr>
-                        <td style="font-weight: bold" colspan="3">Thuế VAT</td>
-                        <td style="font-weight: bold"><p>2400.000<sup>đ</sup></p></td>
-                    </tr>
-                    <tr>
-                        <td style="font-weight: bold" colspan="3">Tổng tiền hàng</td>
-                        <td style="font-weight: bold"><p>2400.000<sup>đ</sup></p></td>
-                    </tr>
-                </table>
-            </div>
+<%--            <div class="delivery-content-right">--%>
+<%--                <table>--%>
+<%--                    <tr>--%>
+<%--                        <th>Tên sản phẩm</th>--%>
+<%--                        <th>Giảm giá</th>--%>
+<%--                        <th>Số lượng</th>--%>
+<%--                        <th>Thành tiền</th>--%>
+<%--                    </tr>--%>
+<%--                    <tr>--%>
+<%--                        <td>Áo lưới xinh tươi</td>--%>
+<%--                        <td>-30%</td>--%>
+<%--                        <td>1</td>--%>
+<%--                        <td><p>1400.000<sup>đ</sup></p></td>--%>
+<%--                    </tr>--%>
+<%--                    <tr>--%>
+<%--                        <td>Quần lưới xinh tươi</td>--%>
+<%--                        <td>-10%</td>--%>
+<%--                        <td>2</td>--%>
+<%--                        <td><p>2400.000<sup>đ</sup></p></td>--%>
+<%--                    </tr>--%>
+<%--                    <tr>--%>
+<%--                        <td style="font-weight: bold" colspan="3">Tổng</td>--%>
+<%--                        <td style="font-weight: bold"><p>2400.000<sup>đ</sup></p></td>--%>
+<%--                    </tr>--%>
+<%--                    <tr>--%>
+<%--                        <td style="font-weight: bold" colspan="3">Thuế VAT</td>--%>
+<%--                        <td style="font-weight: bold"><p>2400.000<sup>đ</sup></p></td>--%>
+<%--                    </tr>--%>
+<%--                    <tr>--%>
+<%--                        <td style="font-weight: bold" colspan="3">Tổng tiền hàng</td>--%>
+<%--                        <td style="font-weight: bold"><p>2400.000<sup>đ</sup></p></td>--%>
+<%--                    </tr>--%>
+<%--                </table>--%>
+<%--            </div>--%>
         </div>
     </div>
 

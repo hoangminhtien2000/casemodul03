@@ -135,15 +135,15 @@
                     </tr>
                     <tr>
                         <td>Tổng sản phẩm</td>
-                        <td>2</td>
+                        <td><p id="tongSP">0</p></td>
                     </tr>
                     <tr>
                         <td>Tổng tiền hàng</td>
-                        <td><p>1400.000<sup>đ</sup></p></td>
+                        <td><p id="tongTien">0<sup>đ</sup></p></td>
                     </tr>
                     <tr>
-                        <td>Tạm tính</td>
-                        <td><p style="color: black;font-weight: bold">1400.000<sup>đ</sup></p></td>
+<%--                        <td>Tạm tính</td>--%>
+<%--                        <td><p style="color: black;font-weight: bold" >0<sup>đ</sup></p></td>--%>
                     </tr>
                 </table>
                 <div class="cart-content-right-text">
@@ -225,31 +225,41 @@
     function addToCart(product) {
         let price = parseFloat(product.p_price) * parseFloat(product.p_quantity);
         let size = mapSize(product.p_size)
-        let addtr = document.createElement("tr");
-        let trcontent = ' <tr id="list_buy"> <td><img src="'+product.p_img+'" alt=""></td> <td>'+product.p_name+'</td> <td><img src="/image/red.jpg" alt=""></td> <td><p>'+size+'</p></td> <td><input type="number" min="0" value="'+product.p_quantity+'"></td> <td><p>'+price+'<sup>đ</sup></p></td> <td> <span>X</span> </td> </tr>'
-        addtr.innerHTML = trcontent;
-        let cartTable = document.querySelector("tbody");
-        cartTable.append(addtr);
+        // let addtr = document.createElement("tr");
+        let trcontent = ' <tr class="list_buy"> <td><img src="'+product.p_img+'" alt=""></td> <td>'+product.p_name+'</td> <td><img src="/image/red.jpg" alt=""></td> <td><p>'+size+'</p></td> <td><input type="number" min="0" value="'+product.p_quantity+'"></td> <td><p><p class="gia">'+price+'</p><sup>đ</sup></p></td> <td> <span>X</span> </td> </tr>'
+        // addtr.innerHTML = trcontent;
+        // let cartTable = document.querySelector("tbody");
+        // cartTable.append(addtr);
+
+        document.getElementById("displayElement").innerHTML += trcontent
 
         cartTotal();
 
     }
 
     function cartTotal(){
-        let cartItem = document.querySelectorAll("tbody tr");
+        let cartItem = document.getElementsByClassName("list_buy");
         // console.log(cartItem.length);
-        // let toTalC = 0;
-        for(let i = 6; i < cartItem.length; i++ ){
-            // let inputValue = cartItem[i].querySelector("input").value;
-            console.log(i);
+        let tongSP = 0;
+        let tongTien = 0;
+        // console.log(cartItem)
+        for(let i = 0; i < cartItem.length; i++ ){
+            let inputValue = cartItem[i].getElementsByTagName("input")[0].value;
+            // console.log(i);
+            // console.log(cartItem[i])
+            // console.log(inputValue)
+            // let productPrice = cartItem[i].getElementsByTagName("gia")[2].innerText;
 
-            // let productPrice = cartItem[i].querySelector("p").innerText;
+             let tien = cartItem[i].getElementsByTagName("p")[2].innerText;
+             tongTien += +tien
             // console.log(productPrice);
-            //  toTalA = inputValue * productPrice;
+            //  tongTien = inputValue * productPrice;
             // toTalC += toTalA;
             // console.log(toTalC);
-
+            tongSP += +inputValue
         }
+        document.getElementById("tongSP").innerHTML = tongSP
+        document.getElementById("tongTien").innerHTML = tongTien
     }
 
 
