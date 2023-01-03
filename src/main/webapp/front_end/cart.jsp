@@ -32,31 +32,31 @@
                 </div>
                 <div class="top-menu-items">
                     <li><a href="/product">SẢN PHẨM</a>
-<%--                        <ul class="top-menu-item">--%>
-<%--                            <li><a href="">Hàng mới về</a></li>--%>
-<%--                            <li><a href="">Colection</a></li>--%>
-<%--                            <li><a href="">Áo</a>--%>
-<%--                                <ul>--%>
-<%--                                    <li><a href="">Áo sơ mi</a></li>--%>
-<%--                                    <li><a href="">Áo thun</a></li>--%>
-<%--                                    <li><a href="">Áo Vest</a></li>--%>
-<%--                                    <li><a href="">Áo khoác</a></li>--%>
-<%--                                    <li><a href="">Áo len</a></li>--%>
-<%--                                </ul>--%>
-<%--                            </li>--%>
-<%--                            <li><a href="">Quần</a>--%>
-<%--                                <ul>--%>
-<%--                                    <li><a href="">Quần Jean</a></li>--%>
-<%--                                    <li><a href="">Quần lửng</a></li>--%>
-<%--                                    <li><a href="">Quần dài</a></li>--%>
-<%--                                </ul>--%>
-<%--                            </li>--%>
-<%--                        </ul>--%>
+                        <%--                        <ul class="top-menu-item">--%>
+                        <%--                            <li><a href="">Hàng mới về</a></li>--%>
+                        <%--                            <li><a href="">Colection</a></li>--%>
+                        <%--                            <li><a href="">Áo</a>--%>
+                        <%--                                <ul>--%>
+                        <%--                                    <li><a href="">Áo sơ mi</a></li>--%>
+                        <%--                                    <li><a href="">Áo thun</a></li>--%>
+                        <%--                                    <li><a href="">Áo Vest</a></li>--%>
+                        <%--                                    <li><a href="">Áo khoác</a></li>--%>
+                        <%--                                    <li><a href="">Áo len</a></li>--%>
+                        <%--                                </ul>--%>
+                        <%--                            </li>--%>
+                        <%--                            <li><a href="">Quần</a>--%>
+                        <%--                                <ul>--%>
+                        <%--                                    <li><a href="">Quần Jean</a></li>--%>
+                        <%--                                    <li><a href="">Quần lửng</a></li>--%>
+                        <%--                                    <li><a href="">Quần dài</a></li>--%>
+                        <%--                                </ul>--%>
+                        <%--                            </li>--%>
+                        <%--                        </ul>--%>
                     </li>
-<%--                    <li><a href="">NAM</a></li>--%>
-<%--                    <li><a href="">TRẺ EM</a></li>--%>
+                    <%--                    <li><a href="">NAM</a></li>--%>
+                    <%--                    <li><a href="">TRẺ EM</a></li>--%>
                     <li><a href="">CHƯƠNG TRÌNH KHUYẾN MẠI</a></li>
-<%--                    <li><a href="">KHẨU TRANG</a></li>--%>
+                    <%--                    <li><a href="">KHẨU TRANG</a></li>--%>
                     <li><a href="">BST</a></li>
                     <li><a href="">THÔNG TIN</a></li>
 
@@ -113,17 +113,17 @@
                         <th>Xóa</th>
                     </tr>
                     <tbody id="displayElement">
-<%--                    <tr id="list_buy">--%>
-<%--                        <td><img src="/image/sp1.2.jpg" alt=""></td>--%>
-<%--                        <td>Áo lưới trắng</td>--%>
-<%--                        <td><img src="/image/red.jpg" alt=""></td>--%>
-<%--                        <td><p>L</p></td>--%>
-<%--                        <td><input type="number" min="0" value="1"></td>--%>
-<%--                        <td><p>499<sup>đ</sup></p></td>--%>
-<%--                        <td>--%>
-<%--                            <span>X</span>--%>
-<%--                        </td>--%>
-<%--                    </tr>--%>
+                    <%--                    <tr id="list_buy">--%>
+                    <%--                        <td><img src="/image/sp1.2.jpg" alt=""></td>--%>
+                    <%--                        <td>Áo lưới trắng</td>--%>
+                    <%--                        <td><img src="/image/red.jpg" alt=""></td>--%>
+                    <%--                        <td><p>L</p></td>--%>
+                    <%--                        <td><input type="number" min="0" value="1"></td>--%>
+                    <%--                        <td><p>499<sup>đ</sup></p></td>--%>
+                    <%--                        <td>--%>
+                    <%--                            <span>X</span>--%>
+                    <%--                        </td>--%>
+                    <%--                    </tr>--%>
                     </tbody>
 
                 </table>
@@ -142,8 +142,8 @@
                         <td><p id="tongTien">0<sup>đ</sup></p></td>
                     </tr>
                     <tr>
-<%--                        <td>Tạm tính</td>--%>
-<%--                        <td><p style="color: black;font-weight: bold" >0<sup>đ</sup></p></td>--%>
+                        <%--                        <td>Tạm tính</td>--%>
+                        <%--                        <td><p style="color: black;font-weight: bold" >0<sup>đ</sup></p></td>--%>
                     </tr>
                 </table>
                 <div class="cart-content-right-text">
@@ -152,8 +152,12 @@
                             style="font-size: 18px">1000<sup>đ</sup></span> để được miễn phí ship</p>
                 </div>
                 <div class="cart-content-right-button">
-                    <a href="/product"><button>TIẾP TỤC MUA</button></a>
-                    <a href="/delivery"><button>THANH TOÁN</button></a>
+                    <a href="/product">
+                        <button>TIẾP TỤC MUA</button>
+                    </a>
+                    <a href="/delivery">
+                        <button>THANH TOÁN</button>
+                    </a>
                 </div>
                 <div class="cart-content-right-dangnhap">
                     <p>Tài khoản của cửa hàng:</p><br>
@@ -195,71 +199,106 @@
 </div>
 </body>
 <script>
-    document.addEventListener("DOMContentLoaded", function(event) {
+    document.addEventListener("DOMContentLoaded", function (event) {
         let products = JSON.parse(localStorage.getItem('products'));
         // console.log("length: "+products.toString());
         // debugger;
-        for(let item in products){
+        for (let item in products) {
             addToCart(products[item]);
         }
 
     });
-    function mapSize(sizeId){
-        if(sizeId ==1){
+
+    function mapSize(sizeId) {
+        if (sizeId == 1) {
             return "S";
         }
-        if(sizeId ==2){
+        if (sizeId == 2) {
             return "M";
         }
-        if(sizeId ==3){
+        if (sizeId == 3) {
             return "L";
         }
-        if(sizeId ==4){
+        if (sizeId == 4) {
             return "XL";
         }
-        if(sizeId ==5){
+        if (sizeId == 5) {
             return "XXl";
         }
     }
-
+    let numOfProduct = 0;
     function addToCart(product) {
+        numOfProduct ++;
         let price = parseFloat(product.p_price) * parseFloat(product.p_quantity);
         let size = mapSize(product.p_size)
-        // let addtr = document.createElement("tr");
-        let trcontent = ' <tr class="list_buy"> <td><img src="'+product.p_img+'" alt=""></td> <td>'+product.p_name+'</td> <td><img src="/image/red.jpg" alt=""></td> <td><p>'+size+'</p></td> <td><input type="number" min="0" value="'+product.p_quantity+'"></td> <td><p><p class="gia">'+price+'</p><sup>đ</sup></p></td> <td> <span>X</span> </td> </tr>'
-        // addtr.innerHTML = trcontent;
-        // let cartTable = document.querySelector("tbody");
-        // cartTable.append(addtr);
 
+        let cartItem = document.querySelectorAll(".list_buy");
+        for (let i = 0; i < cartItem.length; i++) {
+            let productT = document.querySelectorAll(".title");
+            if (productT[i].innerText == product.p_name) {
+                alert("Sản phẩm đã đươc thêm")
+                return
+            }
+        }
+        let idGia = 'gia' + numOfProduct
+        let idSl = 'idSL' + numOfProduct
+        let trcontent = ' <tr class="list_buy"> <td><img src="' + product.p_img + '" alt=""></td> <td><span class="title">' + product.p_name + '<span></td> <td><img src="/image/red.jpg" alt=""></td> <td><p>' + size + '</p></td> <td><input id="' + idSl + '" type="number" min="0" value="' + product.p_quantity + '" onchange="updateQuantity(' + price/product.p_quantity + ',' + +numOfProduct + ')"></td> <td><p><p class="gia" id="' + idGia + '">' + price + '</p><sup>đ</sup></p></td> <td> <span class="delete">X</span> </td> </tr>'
         document.getElementById("displayElement").innerHTML += trcontent
 
         cartTotal();
+        deleteCart();
+
+    }
+    function updateQuantity(price, numOfProduct) {
+        console.log(price)
+        console.log(numOfProduct)
+        let sl = +document.getElementById('idSL' + numOfProduct).value
+        console.log(sl)
+        document.getElementById('gia' + numOfProduct).innerText = price * sl
+    }
+
+    function cartTotal() {
+        let cartItem = document.querySelectorAll(".list_buy");
+
+        let tongSP = 0;
+        let tongTien = 0;
+
+        for (let i = 0; i < cartItem.length; i++) {
+            let inputValue = cartItem[i].getElementsByTagName("input")[0].value;
+
+            let tien = cartItem[i].getElementsByTagName("p")[2].innerText;
+            tongTien += +tien
+            tongSP += +inputValue
+
+        }
+
+        document.getElementById("tongSP").innerHTML = tongSP
+        document.getElementById("tongTien").innerHTML = tongTien
+        inputChange();
 
     }
 
-    function cartTotal(){
-        let cartItem = document.getElementsByClassName("list_buy");
-        // console.log(cartItem.length);
-        let tongSP = 0;
-        let tongTien = 0;
-        // console.log(cartItem)
-        for(let i = 0; i < cartItem.length; i++ ){
-            let inputValue = cartItem[i].getElementsByTagName("input")[0].value;
-            // console.log(i);
-            // console.log(cartItem[i])
-            // console.log(inputValue)
-            // let productPrice = cartItem[i].getElementsByTagName("gia")[2].innerText;
-
-             let tien = cartItem[i].getElementsByTagName("p")[2].innerText;
-             tongTien += +tien
-            // console.log(productPrice);
-            //  tongTien = inputValue * productPrice;
-            // toTalC += toTalA;
-            // console.log(toTalC);
-            tongSP += +inputValue
+    function deleteCart() {
+        let cartItem = document.querySelectorAll(".list_buy");
+        for (let i = 0; i < cartItem.length; i++) {
+            let productT = document.querySelectorAll(".delete");
+            productT[i].addEventListener("click", function (event) {
+                let cartDelete = event.target;
+                let cartItemR = cartDelete.parentElement.parentElement
+                cartItemR.remove();
+                cartTotal();
+            })
         }
-        document.getElementById("tongSP").innerHTML = tongSP
-        document.getElementById("tongTien").innerHTML = tongTien
+    }
+
+    function inputChange(){
+        let cartItem = document.querySelectorAll(".list_buy");
+        for (let i = 0; i < cartItem.length; i++) {
+            let inputValue = cartItem[i].querySelector("input");
+           inputValue.addEventListener("change",function (){
+               cartTotal();
+           })
+        }
     }
 
 
