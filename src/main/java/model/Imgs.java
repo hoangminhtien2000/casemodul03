@@ -1,6 +1,6 @@
 package model;
 
-public class Img {
+public class Imgs {
     private int img_id;
     private String url_img;
     int product_id;
@@ -29,10 +29,10 @@ public class Img {
         this.product_id = product_id;
     }
 
-    public Img() {
+    public Imgs() {
     }
 
-    public Img(int img_id, String url_img, int product_id) {
+    public Imgs(int img_id, String url_img, int product_id) {
         this.img_id = img_id;
         this.url_img = url_img;
         this.product_id = product_id;

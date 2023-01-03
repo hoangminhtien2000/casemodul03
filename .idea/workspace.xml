@@ -4,9 +4,36 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="a4ab01ce-182a-4038-81a6-3d51d0197d6f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/front_end/cart.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/front_end/cart.jsp" afterDir="false" />
+=======
+    <list default="true" id="a4ab01ce-182a-4038-81a6-3d51d0197d6f" name="Changes" comment="Changes">
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/AccountList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/ChangeStatusServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/EditServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/FindAccountServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/LoginServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/LogoutServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/ProductList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/RegisterServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dao/AccountDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/Account.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/service/AccountService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/accountlist.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/edit.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/login.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/managerAdmin.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/products.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/register.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/Show.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/product/products.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/product/products.jsp" afterDir="false" />
+>>>>>>> origin/sirobon
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,8 +48,12 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+<<<<<<< HEAD
         <option value="HTML File" />
         <option value="CSS File" />
+=======
+        <option value="jsf" />
+>>>>>>> origin/sirobon
         <option value="Jsp File" />
         <option value="Class" />
       </list>
@@ -31,6 +62,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+<<<<<<< HEAD
+=======
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/database.sql" root0="SKIP_INSPECTION" />
+  </component>
+>>>>>>> origin/sirobon
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
     <option name="FILTER_WARNINGS" value="false" />
@@ -42,11 +79,14 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2JZqY0nYbA6PAeeqICrN3x3TWx8" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+<<<<<<< HEAD
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
@@ -76,6 +116,46 @@
   <component name="RunManager">
     <configuration name="Tomcat 9.0.701" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.701" ALTERNATIVE_JRE_ENABLED="false">
       <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/home" />
+=======
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\admin\Desktop\casemodul03\src\main\webapp" />
+      <recent name="C:\Users\admin\Desktop\casemodul03\src\main\java\service" />
+      <recent name="C:\Users\admin\Desktop\casemodul03\src\main\java\model" />
+      <recent name="C:\Users\admin\Desktop\casemodul03\src\main\java\dao" />
+      <recent name="C:\Users\admin\Desktop\casemodul03\src\main\java" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\admin\Desktop\casemodul03\src\main\java" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tomcat 9.0.701" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.70" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/register" />
+>>>>>>> origin/sirobon
       <option name="UPDATING_POLICY" value="hot-swap-classes" />
       <deployment>
         <artifact name="Gradle : com.group5 : casemodul03-1.0-SNAPSHOT.war">
@@ -85,7 +165,11 @@
         </artifact>
       </deployment>
       <server-settings>
+<<<<<<< HEAD
         <option name="BASE_DIRECTORY_NAME" value="6c98564c-4f7c-4fba-81c3-22d2c29a1b61" />
+=======
+        <option name="BASE_DIRECTORY_NAME" value="1a3cf223-3461-4486-b60b-346155ad38bc" />
+>>>>>>> origin/sirobon
       </server-settings>
       <predefined_log_file enabled="true" id="Tomcat" />
       <predefined_log_file enabled="true" id="Tomcat Catalina" />
@@ -93,7 +177,11 @@
       <predefined_log_file id="Tomcat Host Manager" />
       <predefined_log_file id="Tomcat Localhost Access" />
       <RunnerSettings RunnerId="Debug">
+<<<<<<< HEAD
         <option name="DEBUG_PORT" value="56492" />
+=======
+        <option name="DEBUG_PORT" value="51772" />
+>>>>>>> origin/sirobon
       </RunnerSettings>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
         <option name="USE_ENV_VARIABLES" value="true" />
@@ -171,6 +259,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1672295998038</updated>
+<<<<<<< HEAD
       <workItem from="1672295999736" duration="36000" />
       <workItem from="1672363407953" duration="255000" />
       <workItem from="1672388259411" duration="157000" />
@@ -183,7 +272,23 @@
       <workItem from="1672621346409" duration="36738000" />
       <workItem from="1672707649361" duration="22012000" />
       <workItem from="1672736701041" duration="418000" />
+=======
+      <workItem from="1672295999736" duration="2523000" />
+      <workItem from="1672651608136" duration="3270000" />
+      <workItem from="1672661214163" duration="3704000" />
+      <workItem from="1672669154842" duration="77000" />
+      <workItem from="1672707556867" duration="1247000" />
+      <workItem from="1672729028987" duration="7386000" />
+>>>>>>> origin/sirobon
     </task>
+    <task id="LOCAL-00001" summary="Changes">
+      <created>1672711149153</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1672711149153</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -199,5 +304,11 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changes" />
   </component>
 </project>

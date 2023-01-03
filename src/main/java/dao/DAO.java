@@ -4,7 +4,7 @@ import model.Category;
 import model.ProductDetail;
 import model.Products;
 import model.Types;
-
+import dao.ConnectionMySql;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -22,7 +22,7 @@ public class DAO {
                 "FROM products JOIN imgs on products.product_id = imgs.product_id";
 
         try{
-            conn = ConnectionMySQL.getConnection();//ket noi vs sql
+            conn = ConnectionMySql.getConnection();//ket noi vs sql
             ps = conn.prepareStatement(query);
             rs = ps.executeQuery();
             while (rs.next()){
@@ -47,7 +47,7 @@ public class DAO {
                 "WHERE products.type_id =?";
 
         try{
-            conn = ConnectionMySQL.getConnection();//ket noi vs sql
+            conn = ConnectionMySql.getConnection();//ket noi vs sql
             ps = conn.prepareStatement(query);
             ps.setString(1,type_id);
             rs = ps.executeQuery();
@@ -74,7 +74,7 @@ public class DAO {
                 "WHERE products.product_id =?";
 
         try{
-            conn = ConnectionMySQL.getConnection();//ket noi vs sql
+            conn = ConnectionMySql.getConnection();//ket noi vs sql
             ps = conn.prepareStatement(query);
             ps.setString(1,id);
             rs = ps.executeQuery();
@@ -101,7 +101,7 @@ public class DAO {
         String query ="SELECT*FROM types";
 
         try{
-            conn = ConnectionMySQL.getConnection();//ket noi vs sql
+            conn = ConnectionMySql.getConnection();//ket noi vs sql
             ps = conn.prepareStatement(query);
             rs = ps.executeQuery();
             while (rs.next()){
@@ -113,13 +113,6 @@ public class DAO {
         }
         return list;
     }
-//    public static void main(String[] args) {
-//        DAO dao = new DAO();
-//        List<Category> list = dao.getAllProduct();
-//        for(Category o:list){
-//            System.out.println(o);
-//        }
-//
-//    }
+
 
 }
