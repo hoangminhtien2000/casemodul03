@@ -169,10 +169,23 @@ INSERT INTO billdetails(bill_id,product_id,unit) VALUE(2,14,1);
 INSERT INTO comments(content,product_id,user_id) VALUE("Good",13,1);
 INSERT INTO comments(content,product_id,user_id) VALUE("Very Good",14,2);
  
-SELECT products.product_id, products.product_name, imgs.url_img, products.price, products.status,sizes.size_name,colors.color_name,types.type_name  
+SELECT products.product_id, products.product_name, imgs.url_img, products.price, warehouses.quantity, products.status,sizes.size_name,colors.color_name,types.type_name  
 FROM imgs
 JOIN products USING(product_id) 
 JOIN sizes USING(size_id)
 JOIN colors USING(color_id)
-JOIN types USING(type_id);
- 
+JOIN types USING(type_id)
+JOIN warehouses USING(product_id)
+ORDER BY product_id;
+
+SELECT * FROM products;
+SELECT * FROM imgs;
+SELECT * FROM warehouses;
+
+-- select * from imgs where url_img = 'https://www.victoriassecret.com/p/760x1013/tif/0e/f0/0ef0f5781d9f43b1952bf9889afcf22a/112061464SHM_OM_F.jpg' and product_id =1;
+-- select * from warehouses where warehouse_id =1 and product_id = 1;
+-- select * from products where product_id =1;
+
+ -- delete from imgs where url_img ='https://www.victoriassecret.com/p/760x1013/tif/0e/f0/0ef0f5781d9f43b1952bf9889afcf22a/112061464SHM_OM_F.jpg' and product_id =1;
+--  delete from warehouses where quantity =5 and product_id =1;
+--  delete from products where product_id =1;

@@ -28,8 +28,32 @@ public class ProductService {
         return productDAO.getType();
     }
 
-    public List<Imgs> getImg()  {
+    public List<Imgs> getImg() {
         return productDAO.getImg();
+    }
+
+    public Imgs findByIdImg(String url_img, int product_id) {
+        return productDAO.findByIdImg(url_img, product_id);
+    }
+
+    public Warehouses findByIdWarehouse(int warehouse_id, int product_id) {
+        return productDAO.findByIdWarehouse(warehouse_id, product_id);
+    }
+
+    public Products findByIdProduct(int product_id) {
+        return productDAO.findByIdProduct(product_id);
+    }
+
+    public void deleteImg(String url_img, int product_id) {
+        productDAO.deleteImg(url_img, product_id);
+    }
+
+    public void deleteWarehouse(int warehouse_id, int product_id){
+        productDAO.deleteWarehouse(warehouse_id, product_id);
+    }
+
+    public void deleteProduct(int product_id){
+        productDAO.deleteProduct(product_id);
     }
 
 }

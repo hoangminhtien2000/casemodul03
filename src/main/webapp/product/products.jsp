@@ -38,7 +38,8 @@
             <th>NAME</th>
             <th>IMG</th>
             <th>PRICE</th>
-            <th>STATUS</th>
+            <th>QUANTITY</th>
+<%--            <th>STATUS</th>--%>
             <th>SIZE</th>
             <th>COLOR</th>
             <th>TYPE</th>
@@ -53,12 +54,14 @@
                 <td>${p.product_name}</td>
                 <td><img src="${p.url_img}" width="100px" height="100px"></td>
                 <td>${p.price}</td>
-                <td>${p.status}</td>
+<%--                <td>${p.status}</td>--%>
+                <td>${p.quantity}</td>
                 <td>${p.size_name}</td>
                 <td>${p.color_name}</td>
                 <td>${p.type_name}</td>
                 <td><a href="" type="button" class="btn btn-warning">Edit</a></td>
-                <td><a href="" type="button" class="btn btn-danger">Delete</a></td>
+                <td><a href="deletes?product_id=${p.product_id}&&url_img=${p.url_img}&&quantity=${p.quantity}" type="button" class="btn btn-danger">Delete</a></td>
+<%--                <td><a href="deletes?product_id=${p.product_id}&&url_img=${p.url_img}" type="button" class="btn btn-danger">Delete</a></td>--%>
             </tr>
         </c:forEach>
         </tbody>
