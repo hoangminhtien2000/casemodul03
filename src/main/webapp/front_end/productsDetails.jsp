@@ -280,7 +280,18 @@
         // console.log(p_img, p_name, p_price, p_size, quantity)
         // addToCart(p_img, p_name, p_price, p_size, quantity);
         let product = {p_img:p_img, p_name:p_name,p_price:p_price,p_size:p_size, p_quantity:p_quantity}
-        products.push(product);
+        let flag = false;
+        for(let item in products){
+            let p = products[item];
+            if(p.p_name === p_name){
+                p.p_quantity = (parseInt(p.p_quantity) + parseInt(p_quantity)).toString();
+                flag = true;
+                break;
+            }
+        }
+        if(!flag){
+            products.push(product);
+        }
         localStorage.setItem("products", JSON.stringify(products));
         products = JSON.parse(localStorage.getItem('products'));
         // console.log("products "+products);

@@ -6,7 +6,14 @@
   <component name="ChangeListManager">
 <<<<<<< HEAD
     <list default="true" id="a4ab01ce-182a-4038-81a6-3d51d0197d6f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/controllers/CreateImg.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controllers/CreateProduct.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controllers/CreateWarehouse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/product/createImg.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/product/createProduct.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/product/createWarehouse.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/src/main/webapp/front_end/cart.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/front_end/cart.jsp" afterDir="false" />
 =======
     <list default="true" id="a4ab01ce-182a-4038-81a6-3d51d0197d6f" name="Changes" comment="Changes">
@@ -34,6 +41,15 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/controllers/Show.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/product/products.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/product/products.jsp" afterDir="false" />
 >>>>>>> origin/sirobon
+=======
+      <change beforePath="$PROJECT_DIR$/database.sql" beforeDir="false" afterPath="$PROJECT_DIR$/database.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/ProductDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/ProductDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Imgs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Imgs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Products.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Products.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Warehouses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Warehouses.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/ProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/product/products.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/product/products.jsp" afterDir="false" />
+>>>>>>> 64ecfc89ceb8db3f7c4b5100530c5bb699d228a9
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,6 +103,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
 <<<<<<< HEAD
+<<<<<<< HEAD
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
@@ -97,20 +114,41 @@
     &quot;last_opened_file_path&quot;: &quot;C:/Users/MAI/Desktop/day_1_project&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
+=======
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/webstorm/casemodul03/src/main/webapp/product",
+    "nodejs_package_manager_path": "npm"
+>>>>>>> 64ecfc89ceb8db3f7c4b5100530c5bb699d228a9
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+<<<<<<< HEAD
       <recent name="C:\Users\MAI\Desktop\casemodul03\src\main\webapp" />
       <recent name="C:\Users\MAI\Desktop\casemodul03\src\main\webapp\font" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\MAI\Desktop\casemodul03\src\main\webapp\css" />
+=======
+      <recent name="D:\webstorm\casemodul03\src\main\webapp\product" />
+      <recent name="D:\webstorm\casemodul03\src\main\webapp" />
+      <recent name="D:\webstorm\casemodul03\src\main\java" />
+      <recent name="D:\webstorm\WebBackEnd\casemodul03\src\main\java\model" />
+>>>>>>> 64ecfc89ceb8db3f7c4b5100530c5bb699d228a9
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="controllers" />
     </key>
   </component>
   <component name="RunManager">
@@ -277,9 +315,13 @@
       <workItem from="1672651608136" duration="3270000" />
       <workItem from="1672661214163" duration="3704000" />
       <workItem from="1672669154842" duration="77000" />
+<<<<<<< HEAD
       <workItem from="1672707556867" duration="1247000" />
       <workItem from="1672729028987" duration="7386000" />
 >>>>>>> origin/sirobon
+=======
+      <workItem from="1672707556867" duration="30199000" />
+>>>>>>> 64ecfc89ceb8db3f7c4b5100530c5bb699d228a9
     </task>
     <task id="LOCAL-00001" summary="Changes">
       <created>1672711149153</created>
@@ -310,5 +352,16 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Changes" />
     <option name="LAST_COMMIT_MESSAGE" value="Changes" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/controllers/CreateProduct.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

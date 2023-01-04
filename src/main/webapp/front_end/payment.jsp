@@ -159,7 +159,7 @@
                     </select>
                 </div>
                 <div class="payment-content-right-payment">
-                    <button>TIẾP TỤC THANH TOÁN</button>
+                    <a href="/product"> <button>TIẾP TỤC THANH TOÁN</button></a>
                 </div>
             </div>
 

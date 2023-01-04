@@ -113,7 +113,6 @@
 </body>
 <script>
   let products = [];
-  localStorage.clear();
   if(localStorage.getItem('products') != undefined){
      products = JSON.parse(localStorage.getItem('products'));
   }else{

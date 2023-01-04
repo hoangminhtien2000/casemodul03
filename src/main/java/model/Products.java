@@ -9,6 +9,7 @@ public class Products {
     private int color_id;
     private int type_id;
 
+
     public int getProduct_id() {
         return product_id;
     }
@@ -78,6 +79,7 @@ public class Products {
         this.type_id = type_id;
     }
 
+
     @Override
     public String toString() {
         return "Products{" +
@@ -89,5 +91,23 @@ public class Products {
                 ", color_id=" + color_id +
                 ", type_id=" + type_id +
                 '}';
+    }
+
+    public Products(String product_name, double price, int size_id, int color_id, int type_id){
+            this.product_name = product_name;
+            this.price = price;
+            this.size_id = size_id;
+            this.color_id = color_id;
+            this.type_id = type_id;
+
+        }
+
+    public Products(int product_id, String product_name, double price, int size_id, int color_id, int type_id) {
+        this.product_id = product_id;
+        this.product_name = product_name;
+        this.price = price;
+        this.size_id = size_id;
+        this.color_id = color_id;
+        this.type_id = type_id;
     }
 }

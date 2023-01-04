@@ -15,12 +15,16 @@ import java.io.IOException;
 public class RegisterServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        resp.setContentType("text/html;charset=UTF-8");
+        req.setCharacterEncoding("utf-8");
         RequestDispatcher requestDispatcher = req.getRequestDispatcher("/view/register.jsp");
         requestDispatcher.forward(req,resp);
     }
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        resp.setContentType("text/html;charset=UTF-8");
+        req.setCharacterEncoding("utf-8");
         AccountService accountService=new AccountService();
         String email=req.getParameter("email");
         String password=req.getParameter("password");

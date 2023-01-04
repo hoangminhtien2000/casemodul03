@@ -26,7 +26,7 @@ public class LoginServlet extends HttpServlet {
             mess = "Sai tài khoản or mật khẩu";
             req.setAttribute("mess", mess);
         }
-            RequestDispatcher dispatcher = req.getRequestDispatcher("/view/login.jsp");
+            RequestDispatcher dispatcher = req.getRequestDispatcher("/view/loginok.jsp");
             dispatcher.forward(req, resp);
     }
 
@@ -45,8 +45,7 @@ public class LoginServlet extends HttpServlet {
         } else if (account != null && account.getRole() == 2) {
             HttpSession session = req.getSession();
             session.setAttribute("account",account);
-            RequestDispatcher dispatcher = req.getRequestDispatcher("/product/products.jsp");
-            dispatcher.forward(req, resp);
+            resp.sendRedirect("/product");
         } else {
             resp.sendRedirect("/login?mess=error");
         }

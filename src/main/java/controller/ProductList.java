@@ -17,7 +17,7 @@ import java.util.List;
 
 @WebServlet(urlPatterns = "/productList")
 public class ProductList extends HttpServlet {
-    ProductService productService=new ProductService();
+    ProductService productService= new ProductService();
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         req.setAttribute("Inforproducts", productService.getAll());

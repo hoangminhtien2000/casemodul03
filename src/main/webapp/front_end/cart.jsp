@@ -199,12 +199,15 @@
 </div>
 </body>
 <script>
+    let products = JSON.parse(localStorage.getItem('products'));
     document.addEventListener("DOMContentLoaded", function (event) {
-        let products = JSON.parse(localStorage.getItem('products'));
+        // let products = JSON.parse(localStorage.getItem('products'));
         // console.log("length: "+products.toString());
         // debugger;
+        let i = 0
         for (let item in products) {
-            addToCart(products[item]);
+            addToCart(products[item], i);
+            i++;
         }
 
     });
@@ -227,7 +230,7 @@
         }
     }
     let numOfProduct = 0;
-    function addToCart(product) {
+    function addToCart(product, i) {
         numOfProduct ++;
         let price = parseFloat(product.p_price) * parseFloat(product.p_quantity);
         let size = mapSize(product.p_size)
@@ -242,7 +245,7 @@
         }
         let idGia = 'gia' + numOfProduct
         let idSl = 'idSL' + numOfProduct
-        let trcontent = ' <tr class="list_buy"> <td><img src="' + product.p_img + '" alt=""></td> <td><span class="title">' + product.p_name + '<span></td> <td><img src="/image/red.jpg" alt=""></td> <td><p>' + size + '</p></td> <td><input id="' + idSl + '" type="number" min="0" value="' + product.p_quantity + '" onchange="updateQuantity(' + price/product.p_quantity + ',' + +numOfProduct + ')"></td> <td><p><p class="gia" id="' + idGia + '">' + price + '</p><sup>đ</sup></p></td> <td> <span class="delete">X</span> </td> </tr>'
+        let trcontent = ' <tr class="list_buy"> <td><img src="' + product.p_img + '" alt=""></td> <td><span class="title">' + product.p_name + '<span></td> <td><img src="/image/red.jpg" alt=""></td> <td><p>' + size + '</p></td> <td><input id="' + idSl + '" type="number" min="0" value="' + product.p_quantity + '" onchange="updateQuantity(' + price/product.p_quantity + ',' + +numOfProduct + ')"></td> <td><p><p class="gia" id="' + idGia + '">' + price + '</p><sup>đ</sup></p></td> <td> <button class="delete" onclick="Delete('+i+')">X</button> </td> </tr>'
         document.getElementById("displayElement").innerHTML += trcontent
 
         cartTotal();
@@ -291,6 +294,15 @@
         }
     }
 
+    function Delete(i) {
+        listProduct = JSON.parse(localStorage.getItem("products"))
+
+        listProduct.splice(i, 1)
+
+        localStorage.setItem("products", JSON.stringify(listProduct))
+
+    }
+
 
     function inputChange(){
         let cartItem = document.querySelectorAll(".list_buy");
@@ -301,7 +313,7 @@
            })
         }
     }
-
+    // localStorage.clear();
 
 </script>
 </html>

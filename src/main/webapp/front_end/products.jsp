@@ -128,7 +128,7 @@
                 <div class="category-right-content row">
                    <c:forEach items="${listP}" var="o">
                        <div class="category-right-content-item">
-                           <a href=""><img src="${o.url_img}" alt="" ></a>
+                           <a href=""><img style="height: 300px" src="${o.url_img}" alt="" ></a>
                            <a href="detail?pid=${o.product_id}"><h1>${o.product_name}</h1></a>
                            <p>${o.price}<sup>đ</sup></p>
                        </div>
